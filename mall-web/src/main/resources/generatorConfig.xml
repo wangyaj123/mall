@@ -16,23 +16,23 @@
             <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/mall"
                             driverClass="com.mysql.jdbc.Driver" password="lovez" userId="root" />
 
-            <javaModelGenerator targetPackage="com.office.mall.dao"
-                                targetProject="src/main/java" >
+            <javaModelGenerator targetPackage="com.office.mall.entiy"
+                                targetProject="D:\J\GraduationProject\mall\mall-dao\src\main\java" >
                 <property name="enableSubPackages" value="true"/>
                 <property name="trimStrings" value="true"/>
             </javaModelGenerator>
 
-            <sqlMapGenerator targetPackage="comm.office.mall.web"
+            <sqlMapGenerator targetPackage="mapper"
                              targetProject="src/main/resources" >
                 <property name="enableSubPackages" value="true"/>
             </sqlMapGenerator>
 
             <javaClientGenerator targetPackage="com.office.mall.dao"
-                                 targetProject="src/main/java" type="XMLMAPPER" >
+                                 targetProject="D:\J\GraduationProject\mall\mall-dao\src\main\java" type="XMLMAPPER" >
                 <property name="enableSubPackages" value="true"/>
             </javaClientGenerator>
 
-            <table tableName="ums_user" domainObjectName="User"
+            <table tableName="ums_admin" domainObjectName="Admin"
                    enableCountByExample="true"
                    enableUpdateByExample="true"
                    enableDeleteByExample="true"

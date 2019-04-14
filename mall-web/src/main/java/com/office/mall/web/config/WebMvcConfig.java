@@ -8,9 +8,4 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
 
-    @Bean(name = "multipartResolver")
-    public StandardServletMultipartResolver multipartResolver() {
-        return new StandardServletMultipartResolver();
-    }
-
 }
