@@ -4,7 +4,7 @@
     <springProperty scope="context" name="bootstrapServers" source="spring.kafka.bootstrap-servers"
                     defaultValue="localhost"/>
     <!--defaultValue 默认模块名称-->
-    <springProperty scope="context" name="moduleName" source="spring.application.name" defaultValue="csos-asset"/>
+    <springProperty scope="context" name="moduleName" source="spring.application.name" defaultValue="mall"/>
     <property name="logPath" value="log"/>
     <!--日志格式定义-->
     <property name="generalPattern"
