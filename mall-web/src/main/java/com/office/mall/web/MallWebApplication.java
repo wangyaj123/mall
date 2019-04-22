@@ -8,12 +8,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
-//@SpringBootApplication
-@SpringBootApplication(exclude= DataSourceAutoConfiguration.class)
-@MapperScan({"com.office.mall.dao"})
+@SpringBootApplication
+//@MapperScan({"com.office.mall.dao"})
+@MapperScan({"com.office.mall.*.*mapper"})
 @ComponentScan(basePackages = { "com.office.mall" })
 public class MallWebApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(MallWebApplication.class, args);
     }
