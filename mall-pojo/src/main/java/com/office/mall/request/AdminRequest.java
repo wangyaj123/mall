@@ -1,8 +1,8 @@
-package com.office.mall.response;
+package com.office.mall.request;
 
 import java.util.Date;
 
-public class AdminResponse {
+public class AdminRequest {
     private Integer id;
 
     private String username;

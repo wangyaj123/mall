@@ -70,6 +70,16 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.54</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.2</version>
+        </dependency>
 
 
     </dependencies>
@@ -83,25 +93,25 @@
             </plugin>
 
             <!--添加mybatis generator maven插件-->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <configuration>
-                    <!--generatorConfig.xml位置-->
-                    <configurationFile>src/main/resources/generatorConfig.xml</configurationFile>
-                    <verbose>true</verbose>
-                    <overwrite>true</overwrite>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>Generate MyBatis Artifacts</id>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <phase>generate-sources</phase>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.mybatis.generator</groupId>-->
+                <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--&lt;!&ndash;generatorConfig.xml位置&ndash;&gt;-->
+                    <!--<configurationFile>src/main/resources/generatorConfig.xml</configurationFile>-->
+                    <!--<verbose>true</verbose>-->
+                    <!--<overwrite>true</overwrite>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>Generate MyBatis Artifacts</id>-->
+                        <!--<goals>-->
+                            <!--<goal>generate</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>generate-sources</phase>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
         <resources>
             <resource>

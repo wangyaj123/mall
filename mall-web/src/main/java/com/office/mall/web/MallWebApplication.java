@@ -9,8 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @SpringBootApplication
-//@MapperScan({"com.office.mall.dao"})
-@MapperScan({"com.office.mall.*.*mapper"})
+@MapperScan({"com.office.mall.dao"})
 @ComponentScan(basePackages = { "com.office.mall" })
 public class MallWebApplication {
     public static void main(String[] args) {
