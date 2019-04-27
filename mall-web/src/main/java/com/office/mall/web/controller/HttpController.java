@@ -33,7 +33,7 @@ public class HttpController {
     public String shopRegisterPage() {
         return "views/shopregister";
     }
-    @RequestMapping("/shopLogin")
+    @RequestMapping("/shop/login")
     public String loginPage() {
         return "views/shoplogin";
     }

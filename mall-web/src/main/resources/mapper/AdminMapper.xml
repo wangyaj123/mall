@@ -27,13 +27,8 @@
     select
     <include refid="Base_Column_List" />
     from ums_admin
-    where
-    <if test=" username != null">
-      and username = #{username}
-    </if>
-    <if test=" password != null">
-      and password=#{password}
-    </if>
+    where username = #{username}
+      and password = #{password}
   </select>
   <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
