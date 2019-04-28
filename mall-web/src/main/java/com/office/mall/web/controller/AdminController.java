@@ -15,11 +15,6 @@ import javax.annotation.Resource;
 public class AdminController {
     @Resource
     private AdminService adminService;
-    //TODO
-    @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public CommonResult update(@RequestBody AdminRequest request){
-        return adminService.register(request);
-    }
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public CommonResult login(@RequestBody AdminRequest request){
         return adminService.select(request);

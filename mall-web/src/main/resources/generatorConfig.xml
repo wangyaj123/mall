@@ -17,7 +17,7 @@
                             driverClass="com.mysql.jdbc.Driver" password="lovez" userId="root" />
 
             <javaModelGenerator targetPackage="com.office.mall.entiy"
-                                targetProject="D:\J\GraduationProject\mall\mall-dao\src\main\java" >
+                                targetProject="D:\J\GraduationProject\mall2\mall-dao\src\main\java" >
                 <property name="enableSubPackages" value="true"/>
                 <property name="trimStrings" value="true"/>
             </javaModelGenerator>
@@ -28,16 +28,16 @@
             </sqlMapGenerator>
 
             <javaClientGenerator targetPackage="com.office.mall.dao"
-                                 targetProject="D:\J\GraduationProject\mall\mall-dao\src\main\java" type="XMLMAPPER" >
+                                 targetProject="D:\J\GraduationProject\mall2\mall-dao\src\main\java" type="XMLMAPPER" >
                 <property name="enableSubPackages" value="true"/>
             </javaClientGenerator>
 
-            <table tableName="ums_user" domainObjectName="User"
-                   enableCountByExample="true"
-                   enableUpdateByExample="true"
-                   enableDeleteByExample="true"
-                   enableSelectByExample="true"
-                   selectByExampleQueryId="true"
+            <table tableName="ums_shop" domainObjectName="Shop"
+                   enableCountByExample="false"
+                   enableUpdateByExample="false"
+                   enableDeleteByExample="false"
+                   enableSelectByExample="false"
+                   selectByExampleQueryId="false"
             ></table>
         </context>
     </generatorConfiguration>

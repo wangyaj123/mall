@@ -27,7 +27,7 @@ function Login_AJAXFunction(objJson,URL) {
                 //将用户名保存在session中
                 localStorage.setItem("username",data.data.username);
                 //页面跳转
-                window.location.href="/admin/page"
+                window.location.href = "/admin/page";
             }else{
                 alert("用户名密码错误或用户不存在");
             }

@@ -92,7 +92,7 @@
                 <version>2.1.4.RELEASE</version>
             </plugin>
 
-            <!--添加mybatis generator maven插件-->
+            <!--&lt;!&ndash;添加mybatis generator maven插件&ndash;&gt;-->
             <!--<plugin>-->
                 <!--<groupId>org.mybatis.generator</groupId>-->
                 <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
