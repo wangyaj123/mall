@@ -9,4 +9,5 @@ import java.util.List;
 public interface ShopService {
     List<ShopResponse> queryList(ShopRequest request);
     Shop selectByPrimaryKey(Integer id);
+    Integer changeStatus(ShopRequest request);
 }

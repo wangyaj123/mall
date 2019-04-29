@@ -1,9 +1,19 @@
 package com.office.mall.request;
 
 public class ShopRequest {
+    private Integer shopId;
+
     private String shopName;
 
     private String companyName;
+
+    public Integer getShopId() {
+        return shopId;
+    }
+
+    public void setShopId(Integer shopId) {
+        this.shopId = shopId;
+    }
 
     public String getShopName() {
         return shopName;

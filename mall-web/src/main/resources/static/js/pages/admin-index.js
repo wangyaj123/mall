@@ -19,7 +19,7 @@ function searchShop(){
         'status':status
     };
    $.ajax({
-       url:"/shop/query",
+       url:"/api/shop/query",
        type: 'POST',
        contentType: "application/json;charset=utf-8",
        dataType: "json",
@@ -68,7 +68,7 @@ function searchShopBy(){
         'status':statu,
     };
     $.ajax({
-        url:"/shop/query",
+        url:"/api/shop/query",
         type: 'POST',
         contentType: "application/json;charset=utf-8",
         dataType: "json",
@@ -84,7 +84,7 @@ function searchShopBy(){
             //追加数据
             var s;
             $.each(data.data.list, function (i, obj) {
-                var sta = obj.status == 0 ?"未审核":(obj.status == 1 ? "已通过":"审核未通过");
+                var sta = obj.status == 0 ?"未审核":(obj.status == 1 ? "已通过":(obj.status == 2 ?"审核未通过":"已关闭"));
                 $("#tbody").append("<tr ng-repeat='entity in list'>" +
                     "<td><input  type='checkbox'></td>"+
                     "<td>" +(++i)+"</td>" +
@@ -108,9 +108,8 @@ function searchShopBy(){
 
 }
 function getDetail(shopId){
-    alert(shopId);
     $.ajax({
-        url:"/shop/query/detail?shopId="+shopId,
+        url:"/api/shop/query/detail?shopId="+shopId,
         type: 'GET',
         processData: false,       //必不可缺
         async:true,
@@ -129,16 +128,47 @@ function getDetail(shopId){
             document.getElementById("legalmanId").innerHTML = obj.legalmanId;
             document.getElementById("bankName").innerHTML = obj.bankName;
             document.getElementById("bankCount").innerHTML = obj.bankCount;
-
+            $('.modal-footer').html("");
+            $('.modal-footer').append("<button  class='btn btn-success' data-dismiss='modal' aria-hidden='true' onclick='updateStatus("+shopId+","+1+")'>通过</button>" +
+                "<button  class='btn btn-danger' data-dismiss='modal' aria-hidden='true' onclick='updateStatus("+shopId+","+2+")'>拒绝通过</button>" +
+                "<button class='btn btn-default' data-dismiss='modal' aria-hidden='true'>关闭</button>");
+            $('#seller').html("");
+            $('#seller').append("<button  class='btn btn-danger' data-dismiss='modal' aria-hidden='true' onclick='updateStatus(\"+shopId+\",\"+0+\")'>退回审核</button>"+
+                " <button  class='btn btn-danger' data-dismiss='modal' aria-hidden='true'onclick='updateStatus("+shopId+","+3+")'>关闭商家</button>" +
+                "<button class='btn btn-default' data-dismiss='modal' aria-hidden='true'>关闭</button>");
         },
         error() {
             alert("服务器异常");
         }
     })
-}
-function updateStatus(licenseNumber){
-    alert(licenseNumber.toString())
 
+}
+function updateStatus(shopId,status){
+    var objJson = {
+        "shopId":shopId,
+        "status":status
+    };
+    $.ajax({
+        url:"/api/shop/changeStatus",
+        type: 'POST',
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        data:JSON.stringify(objJson),
+        processData: false,       //必不可缺
+        async:true,
+        cache: false,
+        success:function(data){
+            if(data.code==200&&data.data==1){
+                alert("审核成功");
+                searchShopBy();
+            }else{
+                alert("操作失败")
+            }
+        },
+        error() {
+            alert("服务器异常")
+        }
+    })
 }
 
  

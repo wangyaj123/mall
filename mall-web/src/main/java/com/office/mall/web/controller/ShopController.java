@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping("/shop")
+@RequestMapping("/api/shop")
 public class ShopController {
     @Resource
     private ShopService shopService;
@@ -26,5 +26,8 @@ public class ShopController {
     public CommonResult queryDetailById(@Param("shopId") Integer shopId){
         return commonResult.success(shopService.selectByPrimaryKey(shopId));
    }
-
+    @RequestMapping(value = "/changeStatus",method = RequestMethod.POST)
+    public CommonResult changeStatus(@RequestBody ShopRequest request){
+        return commonResult.success(shopService.changeStatus(request));
+    }
 }

@@ -27,4 +27,8 @@ public class ShopServiceImpl implements ShopService {
     public Shop selectByPrimaryKey(Integer id) {
         return shopMapper.selectByPrimaryKey(id);
     }
+
+    public Integer changeStatus(ShopRequest request) {
+        return shopMapper.updateById(request);
+    }
 }
