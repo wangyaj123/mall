@@ -1,6 +1,7 @@
 package com.office.mall.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -29,12 +30,14 @@ public class HttpController {
     public String registerPage() {
         return "views/register";
     }
+    @RequestMapping("/login")
+    public String loginPage(){return "views/login";}
     @RequestMapping("/shop/register")
     public String shopRegisterPage() {
         return "views/shopregister";
     }
     @RequestMapping("/shop/login")
-    public String loginPage() {
+    public String shopLoginPage() {
         return "views/shoplogin";
     }
     @RequestMapping("/admin")

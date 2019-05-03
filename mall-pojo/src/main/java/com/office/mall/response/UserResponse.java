@@ -4,25 +4,36 @@ public class UserResponse {
 
     private Integer id;
 
+
     private String username;
+
 
     private String password;
 
+
     private String phone;
+
 
     private Integer status;
 
-    private String createTime;
 
     private String icon;
+
+
+    private Long createTime;
+
+    private Long lastLoginTime;
+
 
     public Integer getId() {
         return id;
     }
 
+
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getUsername() {
         return username;
@@ -48,6 +59,7 @@ public class UserResponse {
         this.phone = phone == null ? null : phone.trim();
     }
 
+
     public Integer getStatus() {
         return status;
     }
@@ -56,20 +68,30 @@ public class UserResponse {
         this.status = status;
     }
 
-    public String getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime == null ? null : createTime.trim();
-    }
-
     public String getIcon() {
         return icon;
     }
 
+
     public void setIcon(String icon) {
         this.icon = icon == null ? null : icon.trim();
+    }
+
+    public Long getCreateTime() {
+        return createTime;
+    }
+
+
+    public void setCreateTime(Long createTime) {
+        this.createTime = createTime;
+    }
+
+    public Long getLastLoginTime() {
+        return lastLoginTime;
+    }
+
+    public void setLastLoginTime(Long lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
     }
 
     @Override
@@ -80,8 +102,9 @@ public class UserResponse {
                 ", password='" + password + '\'' +
                 ", phone='" + phone + '\'' +
                 ", status=" + status +
-                ", createTime='" + createTime + '\'' +
                 ", icon='" + icon + '\'' +
+                ", createTime=" + createTime +
+                ", lastLoginTime=" + lastLoginTime +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://localhost:8081/ -->
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>body</title>
 </head>
 <body>
@@ -9,11 +10,11 @@
     <div class="py-container">
         <div class="yui3-g Logo">
             <div class="yui3-u Left logoArea">
-                <a class="logo-bd" title="品优购" href="http://localhost:8081/JD-index.html" target="_blank"></a>
+                <a class="logo-bd" title="办公用品电子商城" th:href="@{http://localhost:8081/}" target="_blank"></a>
             </div>
             <div class="yui3-u Center searchArea">
                 <div class="search">
-                    <form action="http://localhost:8081/" class="sui-form form-inline">
+                    <form th:action="@{http://localhost:8081/}" class="sui-form form-inline">
                         <!--searchAutoComplete-->
                         <div class="input-append">
                             <input type="text" id="autocomplete" ng-model="keywords" class="input-error input-xxlarge">
@@ -43,7 +44,6 @@
                             <i class="shopnum">0</i>
                         </a>
                         <div class="clearfix shopcarlist" id="shopcarlist" style="display:none">
-                            <p>"啊哦，你的购物车还没有商品哦！"</p>
                             <p>"啊哦，你的购物车还没有商品哦！"</p>
                         </div>
                     </div>

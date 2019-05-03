@@ -4,33 +4,36 @@ public class UserRequest {
 
     private Integer id;
 
+
     private String username;
+
 
     private String password;
 
-    private String nickname;
 
     private String phone;
 
+
     private Integer status;
 
-    private String createTime;
 
     private String icon;
 
-    private Integer gender;
 
-    private String city;
+    private Long createTime;
 
-    private Integer integration;
+    private Long lastLoginTime;
+
 
     public Integer getId() {
         return id;
     }
 
+
     public void setId(Integer id) {
         this.id = id;
     }
+
 
     public String getUsername() {
         return username;
@@ -48,14 +51,6 @@ public class UserRequest {
         this.password = password == null ? null : password.trim();
     }
 
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname == null ? null : nickname.trim();
-    }
-
     public String getPhone() {
         return phone;
     }
@@ -63,6 +58,7 @@ public class UserRequest {
     public void setPhone(String phone) {
         this.phone = phone == null ? null : phone.trim();
     }
+
 
     public Integer getStatus() {
         return status;
@@ -72,43 +68,29 @@ public class UserRequest {
         this.status = status;
     }
 
-    public String getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime == null ? null : createTime.trim();
-    }
-
     public String getIcon() {
         return icon;
     }
+
 
     public void setIcon(String icon) {
         this.icon = icon == null ? null : icon.trim();
     }
 
-    public Integer getGender() {
-        return gender;
+    public Long getCreateTime() {
+        return createTime;
     }
 
-    public void setGender(Integer gender) {
-        this.gender = gender;
+
+    public void setCreateTime(Long createTime) {
+        this.createTime = createTime;
     }
 
-    public String getCity() {
-        return city;
+    public Long getLastLoginTime() {
+        return lastLoginTime;
     }
 
-    public void setCity(String city) {
-        this.city = city == null ? null : city.trim();
-    }
-
-    public Integer getIntegration() {
-        return integration;
-    }
-
-    public void setIntegration(Integer integration) {
-        this.integration = integration;
+    public void setLastLoginTime(Long lastLoginTime) {
+        this.lastLoginTime = lastLoginTime;
     }
 }

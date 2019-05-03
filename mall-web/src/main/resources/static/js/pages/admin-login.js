@@ -37,7 +37,7 @@ function Login_AJAXFunction(objJson,URL) {
         }
     });
 }
-$('#loginForm,#regForm').bootstrapValidator({
+$('.loginForm').bootstrapValidator({
     fields: {
         username: {
             validators: {
