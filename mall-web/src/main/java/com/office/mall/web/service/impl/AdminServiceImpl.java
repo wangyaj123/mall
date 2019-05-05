@@ -20,12 +20,12 @@ public class AdminServiceImpl implements AdminService {
         if(login !=null){
             return commonResult.success(login);
         }
-        return commonResult.validateFailed("用户不存在，请先注册！");
+        return commonResult.validateFailed("用户不存在");
     }
 
     public CommonResult register(AdminRequest request) {
         Admin admin = adminMapper.selectByName(request.getUsername());
-        if(admin!=null) {
+        if(admin == null) {
             int result = adminMapper.insert(request);
             return result==1?commonResult.success(request):commonResult.validateFailed("注册失败");
         }

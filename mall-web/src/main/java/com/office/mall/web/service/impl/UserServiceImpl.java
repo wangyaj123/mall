@@ -27,8 +27,17 @@ public class UserServiceImpl  implements UserService {
     }
 
     public CommonResult register(UserRequest request) {
-        userMapper.insert(request);
-        return null;
+        User user = userMapper.getByName(request.getUsername());
+        if (user == null) {
+            int result = userMapper.insert(request);
+            return result==1?commonResult.success(request):commonResult.validateFailed("注册失败");
+        } else {
+            return commonResult.validateFailed("用户名已注册");
+        }
+    }
+
+    public User getByPhone(String phone) {
+        return userMapper.getByPhone(phone);
     }
 
 }

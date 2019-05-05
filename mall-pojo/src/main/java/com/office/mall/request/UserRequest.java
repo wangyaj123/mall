@@ -93,4 +93,18 @@ public class UserRequest {
     public void setLastLoginTime(Long lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
+
+    @Override
+    public String toString() {
+        return "UserRequest{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", status=" + status +
+                ", icon='" + icon + '\'' +
+                ", createTime=" + createTime +
+                ", lastLoginTime=" + lastLoginTime +
+                '}';
+    }
 }

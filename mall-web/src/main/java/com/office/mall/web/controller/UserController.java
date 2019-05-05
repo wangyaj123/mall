@@ -20,5 +20,9 @@ public class UserController {
     public CommonResult login(@RequestBody UserRequest request){
         return userService.select(request);
     }
-
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public CommonResult register(@RequestBody UserRequest request){
+        System.out.println(request);
+        return userService.register(request);
+    }
 }
