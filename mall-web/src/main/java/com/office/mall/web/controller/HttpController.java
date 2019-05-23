@@ -1,7 +1,6 @@
 package com.office.mall.web.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -32,13 +31,39 @@ public class HttpController {
     }
     @RequestMapping("/login")
     public String loginPage(){return "views/login";}
+    @RequestMapping("/cart")
+    public String cartPage(){return "views/cart";}
+    @RequestMapping("/shop")
+    public String shopPage() {
+        return "shop/index";
+    }
     @RequestMapping("/shop/register")
     public String shopRegisterPage() {
-        return "views/shopregister";
+        return "shop/shopregister";
     }
     @RequestMapping("/shop/login")
     public String shopLoginPage() {
-        return "views/shoplogin";
+        return "shop/shoplogin";
+    }
+    @RequestMapping("/shop/goods")
+    public String shopGoodsPage() {
+        return "shop/goods";
+    }
+    @RequestMapping("/shop/goodsEdit")
+    public String shopGoodsEdit() {
+        return "shop/goods_edit";
+    }
+    @RequestMapping("/shop/home")
+    public String shopHomePage() {
+        return "shop/home";
+    }
+    @RequestMapping("/shop/seller")
+    public String shopSellerPage() {
+        return "shop/seller";
+    }
+    @RequestMapping("/shop/password")
+    public String shopPwdPage() {
+        return "shop/password";
     }
     @RequestMapping("/admin")
     public String adminLoginPage() {
@@ -57,7 +82,7 @@ public class HttpController {
         return "admin/brand";
     }
     @RequestMapping("/admin/goods")
-    public String adminGoodPage() {
+    public String adminGoodsPage() {
         return "admin/goods";
     }
     @RequestMapping("/admin/content")
@@ -87,5 +112,9 @@ public class HttpController {
     @RequestMapping("/admin/template")
     public String adminTemplatePage() {
         return "admin/type_template";
+    }
+    @RequestMapping("/productInfo")
+    public String ProductInfoPage() {
+        return "views/product-list";
     }
 }

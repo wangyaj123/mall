@@ -4,7 +4,7 @@
 <generatorConfiguration>
 
         <classPathEntry
-                location="D:\Tools\mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar"/>
+                location="G:\plugs/mysql-connector-java-5.1.46.jar"/>
 
         <context id="common-model" targetRuntime="MyBatis3">
 
@@ -17,7 +17,7 @@
                             driverClass="com.mysql.jdbc.Driver" password="lovez" userId="root" />
 
             <javaModelGenerator targetPackage="com.office.mall.entiy"
-                                targetProject="D:\J\GraduationProject\mall2\mall-dao\src\main\java" >
+                                targetProject="G:\JProject\GraduationProject\mall\mall-dao\src\main\java" >
                 <property name="enableSubPackages" value="true"/>
                 <property name="trimStrings" value="true"/>
             </javaModelGenerator>
@@ -28,11 +28,11 @@
             </sqlMapGenerator>
 
             <javaClientGenerator targetPackage="com.office.mall.dao"
-                                 targetProject="D:\J\GraduationProject\mall2\mall-dao\src\main\java" type="XMLMAPPER" >
+                                 targetProject="G:\JProject\GraduationProject\mall\mall-dao\src\main\java" type="XMLMAPPER" >
                 <property name="enableSubPackages" value="true"/>
             </javaClientGenerator>
 
-            <table tableName="pms_product" domainObjectName="Product"
+            <table tableName="ums_cart" domainObjectName="Cart"
                    enableCountByExample="false"
                    enableUpdateByExample="false"
                    enableDeleteByExample="false"

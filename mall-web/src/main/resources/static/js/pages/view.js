@@ -7,7 +7,6 @@ function loginUser(){
     };
     var URL = "/api/view/login";
     Login_AJAXFunction(objJson,URL);
-
 }
 
 function Login_AJAXFunction(objJson,URL) {
@@ -23,7 +22,8 @@ function Login_AJAXFunction(objJson,URL) {
             if(data.code==200){
                 console.log(data);
                 //将用户名保存在session中
-                localStorage.setItem("username",data.data.username);
+                localStorage.setItem("userLoginName",data.data.username);
+                localStorage.setItem("userId",data.data.id);
                 //页面跳转
                 window.location.href = "/";
             }else{
@@ -82,10 +82,9 @@ function register() {
     var URL = "/api/view/register";
     var code = localStorage.getItem("smsCode");
     if(password == rePassword){
-        alert(code)
+        //alert(code)
         var smscode = $('#smscode').val();
-        //var smscode1 = document.getElementById("smscode").innerText;
-        alert(smscode);
+        //alert(smscode);
         if(code == smscode){
             register_AJAX(URL, objJson);
         }else
@@ -119,3 +118,4 @@ function register_AJAX(URL, objJson) {
         }
     });
 }
+

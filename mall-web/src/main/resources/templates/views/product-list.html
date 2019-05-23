@@ -1,0 +1,245 @@
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>产品详情页</title>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/webbase.css" th:href="@{../../static/css/webbase.css}" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/pages-item.css" th:href="@{../../static/css/pages-item.css}" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/pages-zoom.css" th:href="@{../../static/css/pages-zoom.css}" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/widget-cartPanelView.css" th:href="@{../../static/css/widget-cartPanelView.css}" />
+    
+	<script type="text/javascript" src="../../static/js/plugins/jquery-1.11.3.min.js" th:src="@{../../static/js/plugins/jquery-1.11.3.min.js}"></script>
+	<script type="text/javascript" src="../../static/js/plugins/angular.min.js" th:src="@{../../static/js/plugins/angular.min.js}"></script>
+	<script type="text/javascript" th:src="@{../../static/js/pages/view-index.js}" src="../../static/js/pages/view-index.js"></script>
+	<script type="text/javascript" th:src="@{../../static/js/pages/product.js}" src="../../static/js/pages/product.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#head").load("/header");
+			$("#footer").load("/footer");
+		});
+	</script>
+
+</head>
+
+<body ng-app="pinyougou" ng-controller="itemController" onload="pro_detail()">
+
+<!--页面顶部 开始-->
+<div id="head"></div>
+<!--头部-->
+<div class="header">
+	<div class="py-container">
+		<div class="yui3-g Logo">
+			<div class="yui3-u Left logoArea">
+				<a class="logo-bd" title="办公用品电子商城" th:href="@{http://localhost:8081/}" target="_blank"></a>
+			</div>
+			<div class="yui3-u Center searchArea">
+				<div class="search">
+					<form th:action="@{http://localhost:8081/}" class="sui-form form-inline">
+						<!--searchAutoComplete-->
+						<div class="input-append">
+							<input type="text" id="keywords"  class="input-error input-xxlarge" style="height: 33px;">
+							<button class="sui-btn btn-xlarge btn-danger" onclick="search()" type="button">搜索</button>
+						</div>
+					</form>
+				</div>
+				<div class="hotwords">
+					<ul>
+						<li class="f-item">商城首发</li>
+						<li class="f-item">亿元优惠</li>
+						<li class="f-item">9.9元团购</li>
+						<li class="f-item">每满99减30</li>
+						<li class="f-item">亿元优惠</li>
+						<li class="f-item">9.9元团购</li>
+						<li class="f-item">办公用品</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="yui3-u Right shopArea">
+				<div class="fr shopcar">
+					<div class="show-shopcar" id="shopcar">
+						<span class="car"></span>
+						<a class="sui-btn btn-default btn-xlarge" href="http://localhost:8081/cart.html" target="_blank">
+							<span>我的购物车</span>
+							<i class="shopnum">0</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="yui3-g NavList">
+			<div class="yui3-u Left all-sort">
+				<h4>全部商品分类</h4>
+			</div>
+			<div class="yui3-u Center navArea">
+				<ul class="nav">
+					<li class="f-item">数码系列</li>
+					<li class="f-item">桌面用品</li>
+					<li class="f-item">电脑耗材</li>
+					<li class="f-item">全球购</li>
+					<li class="f-item">闪购</li>
+					<li class="f-item">团购</li>
+					<li class="f-item">有趣</li>
+				</ul>
+			</div>
+			<div class="yui3-u Right shopArea"></div>
+
+
+		</div>
+	</div>
+</div>
+
+<!--页面顶部 结束-->
+<div class="py-container">
+	<div id="item">
+		<div class="crumb-wrap">
+			<ul class="sui-breadcrumb">
+				<li>办公用品电子商城</li>
+			</ul>
+		</div>
+		<!--product-info-->
+		<div class="product-info">
+			<div class="fl preview-wrap">
+				<!--放大镜效果-->
+				<div class="zoom">
+					<!--默认第一个预览-->
+					<div id="preview" class="spec-preview">
+							<span class="jqzoom" id="productImg">
+							     <img  id="imgId" src="http://192.168.25.133/group1/M00/00/00/wKgZhVnGbYuAO6AHAAjlKdWCzvg253.jpg" width="400px" height="400px" />
+							</span>
+					</div>
+					<!--下方的缩略图-->
+					<div class="spec-scroll">
+						<a class="prev">&lt;</a>
+						<!--左右按钮-->
+						<div class="items">
+							<ul id="imgList">
+							</ul>
+						</div>
+						<a class="next">&gt;</a>
+					</div>
+				</div>
+			</div>
+			<div class="fr itemInfo-wrap">
+				<div class="sku-name">
+					<h4 id="title"></h4>
+				</div>
+				<div class="news"><span>打折促销 </span></div>
+				<div class="summary">
+					<div class="summary-wrap">
+						<div class="fl title">
+							<i>价　　格</i>
+						</div>
+						<div class="fl price">
+							<i>¥</i>
+							<em id="price"></em>
+							<span>降价通知</span>
+						</div>
+						<div class="fr remark">
+							<i>累计评价</i><em>612188</em>
+						</div>
+					</div>
+					<div class="summary-wrap">
+						<div class="fl title">
+							<i>促　　销</i>
+						</div>
+						<div class="fl fix-width">
+							<i class="red-bg">加价购</i>
+							<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
+								购热销商品</em>
+						</div>
+					</div>
+				</div>
+				<div class="support">
+					<div class="summary-wrap">
+						<div class="fl title">
+							<i>支　　持</i>
+						</div>
+						<div class="fl fix-width">
+							<em class="t-gray"></em>
+						</div>
+					</div>
+					<div class="summary-wrap">
+						<div class="fl title">
+							<i>配 送 至</i>
+						</div>
+						<div class="fl fix-width">
+							<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix choose">
+					<div id="specification" class="summary-wrap clearfix">
+
+						<dl>
+							<dt>
+								<div class="fl title">
+									<i>网络</i>
+								</div>
+							</dt>
+
+							<dd><a href="javascript:;"
+								   class="{{isSelected('网络','移动3G')?'selected':''}}"
+								   ng-click="selectSpecification('网络','移动3G')">移动3G
+								<span title="点击取消选择">&nbsp;</span>
+							</a></dd>
+							<dd><a href="javascript:;"
+								   class="{{isSelected('网络','移动4G')?'selected':''}}"
+								   ng-click="selectSpecification('网络','移动4G')">移动4G
+								<span title="点击取消选择">&nbsp;</span>
+							</a></dd>
+						</dl>
+
+					</div>
+
+					<div class="summary-wrap">
+						<div class="fl title">
+							<div class="control-group">
+								<div class="controls">
+									<input autocomplete="off" ng-model="num" type="text" value="1" minnum="1" class="itxt" />
+									<a href="javascript:void(0)" class="increment plus" ng-click="addNum(1)">+</a>
+									<a href="javascript:void(0)" class="increment mins" ng-click="addNum(-1)">-</a>
+								</div>
+							</div>
+						</div>
+						<div class="fl">
+							<ul class="btn-choose unstyled">
+								<li>
+									<a  class="sui-btn  btn-danger addshopcar" onclick="addToCart(id)">加入购物车</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 底部栏位 -->
+	
+<!--页面底部  开始 -->
+<div id="footer"></div>
+<script type="text/javascript">
+$(function(){
+	$("#service").hover(function(){
+		$(".service").show();
+	},function(){
+		$(".service").hide();
+	});
+	$("#shopcar").hover(function(){
+		$("#shopcarlist").show();
+	},function(){
+		$("#shopcarlist").hide();
+	});
+
+})
+</script>
+
+<!--页面底部  结束 -->
+</body>
+
+</html>

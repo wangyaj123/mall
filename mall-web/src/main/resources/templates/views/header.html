@@ -4,7 +4,8 @@
 	<meta charset="utf-8" />
 	<title>header</title>
 </head>
-<body>
+<script type="text/javascript" th:src="@{../../static/js/pages/view-index.js}" src="../../static/js/pages/view-index.js"></script>
+<body onload="getUserName()">
 <div id="nav-bottom">
 	<!--顶部-->
 	<div class="nav-top">
@@ -13,12 +14,12 @@
 				<div class="shortcut">
 					<ul class="fl">
 						<li class="f-item">办公用品电子商城欢迎您！</li>
-						<li class="f-item">请<a th:href="@{/login}" target="_blank">登录</a>　<span><a th:href="@{/register.html}" target="_blank">免费注册</a></span></li>
+						<li class="f-item" id="loginUser">请<a th:href="@{/login}" target="_blank" >登录</a>　<span><a th:href="@{/register.html}" target="_blank">免费注册</a></span></li>
 					</ul>
 					<ul class="fr">
 						<li class="f-item">我的订单</li>
 						<li class="f-item space"></li>
-						<li class="f-item"><a href="home.html" target="_blank">我的品优购</a></li>
+						<li class="f-item"><a href="home.html" target="_blank">我的商城</a></li>
 						<li class="f-item space"></li>
 						<li class="f-item">商城会员</li>
 						<li class="f-item space"></li>
@@ -30,7 +31,7 @@
 							<span>客户服务</span>
 							<ul class="service">
 								<li><a href="cooperation.html" target="_blank">合作招商</a></li>
-								<li><a href="shoplogin.html" target="_blank">商家后台</a></li>
+								<li><a href="../shop/shoplogin.html" target="_blank">商家后台</a></li>
 								<li><a href="cooperation.html" target="_blank">合作招商</a></li>
 								<li><a href="#">商家后台</a></li>
 							</ul>
