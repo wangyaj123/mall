@@ -266,10 +266,10 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">修改密码</a>
+                                        <a href="/admin/password" class="btn btn-default btn-flat">修改密码</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="../logout" class="btn btn-default btn-flat">注销</a>
+                                        <a href="/admin" class="btn btn-default btn-flat">退出</a>
                                     </div>
                                 </li>
                             </ul>
@@ -342,16 +342,11 @@
 				                    <i class="fa fa-circle-o"></i>品牌管理
 				                </a>
 				            </li>
-							<li id="admin-login 0">
-				                <a th:href="@{/admin/specification}" target="iframe">
-				                    <i class="fa fa-circle-o"></i>规格管理
-				                </a>
-				            </li>							
-							<li id="admin-login 3">
-				                <a href="/admin/template" target="iframe">
-				                    <i class="fa fa-circle-o"></i>模板管理
-				                </a>
-				            </li>
+<!--							<li id="admin-login 0">-->
+<!--				                <a th:href="@{/admin/specification}" target="iframe">-->
+<!--				                    <i class="fa fa-circle-o"></i>规格管理-->
+<!--				                </a>-->
+<!--				            </li>-->
 							<li id="admin-login 4">
 				                <a th:href="@{/admin/item}" target="iframe">
 				                    <i class="fa fa-circle-o"></i>分类管理
@@ -368,7 +363,7 @@
 					<li class="treeview">
 				        <a href="#">
 				            <i class="fa fa-folder"></i> 
-				            <span>广告管理</span>
+				            <span>系统管理</span>
 				            <span class="pull-right-container">
 				       			<i class="fa fa-angle-left pull-right"></i>
 				   		 	</span>
@@ -376,13 +371,13 @@
 				        <ul class="treeview-menu">
 				
 				            <li id="admin-login 6">
-				                <a th:href="@{/admin/category}" target="iframe">
-				                    <i class="fa fa-circle-o"></i>广告类型管理
+				                <a th:href="@{/admin/password}" target="iframe">
+				                    <i class="fa fa-circle-o"></i>修改密码
 				                </a>
 				            </li>
 							<li id="admin-login 7">
-				                <a th:href="@{/admin/content}" target="iframe">
-				                    <i class="fa fa-circle-o"></i>广告管理
+				                <a th:href="@{/admin/sysUser}" target="iframe">
+				                    <i class="fa fa-circle-o"></i>系统用户管理
 				                </a>
 				            </li>
 				        </ul>                        
@@ -399,7 +394,6 @@
         <div class="content-wrapper">
 			<iframe width="100%" id="iframe" name="iframe"	onload="SetIFrameHeight()" 
 					frameborder="0" src="home.html" th:src="@{home.html}"></iframe>
- 
         </div>
         <!-- 内容区域 /-->
 
@@ -408,7 +402,7 @@
             <div class="pull-right hidden-xs">
                 <b>Version</b> 1.0.8
             </div>
-            <strong>Copyright &copy; 2014-2017 <a href="http://www.itcast.cn">研究院研发部</a>.</strong> All rights reserved.
+            <strong><a href="http://www.cdtu.edu.cn/">成都工业学院毕业设计作品</a>.</strong> All rights reserved.
         </footer>
         <!-- 底部导航 /-->
 

@@ -35,145 +35,94 @@
 		<!--tab页-->
 		<div class="nav-tabs-custom">
 
-			<!--tab头-->
-			<ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#home" data-toggle="tab">商品基本信息</a>                                                        
-                            </li>   
-                            <li >
-                                <a href="#pic_upload" data-toggle="tab">商品图片</a>                                                        
-                            </li>
-                            <li >
-                                <a href="#spec" data-toggle="tab" >规格</a>                                                        
-                            </li>                       
-                        </ul>
-			<!--tab头/-->
+		<!--tab头-->
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="#home" data-toggle="tab">商品基本信息</a>
+			</li>
+			<li >
+				<a href="#pic_upload" data-toggle="tab">商品图片</a>
+			</li>
+		</ul>
+		<!--tab头/-->
 						
 			<!--tab内容-->
-			<div class="tab-content">
+		<div class="tab-content">
 
 				<!--表单内容-->
-				<div class="tab-pane active" id="home">
-					<div class="row data-type">
-						<div class="col-md-10 data">
-		                           	  	<table>
-		                           	  	</table>
-		                              	
-		                              </div>
-						<div class="col-md-2 title">商品名称</div>
-						<div class="col-md-10 data">
-							<input type="text" id="goodsName" class="form-control" placeholder="商品名称" name="productName">
-						</div>
-		                           
-						<div class="col-md-2 title">品牌</div>
-						<div class="col-md-10 data">
-							<select class="form-control" id="brandId" name="brandId" ></select>
-						</div>
-		
-						<div class="col-md-2 title">副标题</div>
-						<div class="col-md-10 data">
-							<input type="text" id="subTitle"  class="form-control"   placeholder="副标题" name="subTitle">
-						</div>
-		                           
-						<div class="col-md-2 title">价格</div>
-						<div class="col-md-10 data">
-							<div class="input-group">
-								<span class="input-group-addon">¥</span>
-								<input type="text" id="price"   class="form-control"  placeholder="价格" name="price">
+			<div class="tab-pane active" id="home">
+						<div class="row data-type">
+							<div class="col-md-2 title">商品名称</div>
+							<div class="col-md-10 data">
+								<input type="text" id="goodsName" class="form-control" placeholder="商品名称" name="productName" value="笔记本">
 							</div>
+
+							<div class="col-md-2 title">品牌</div>
+							<div class="col-md-10 data">
+								<select class="form-control" id="brandId" name="brandId" >
+									<option value="0" name="scope"></option>
+									<option value="1" name="scope">华为</option>
+									<option value="2" name="scope">晨光</option>
+									<option value="3" name="scope">惠普</option>
+									<option value="4" name="scope">联想</option>
+								</select>
+							</div>
+
+							<div class="col-md-2 title">副标题</div>
+							<div class="col-md-10 data">
+								<input type="text" id="subTitle"  class="form-control"   placeholder="副标题" name="subTitle" >
+							</div>
+
+							<div class="col-md-2 title">价格</div>
+							<div class="col-md-10 data">
+								<div class="input-group">
+									<span class="input-group-addon">¥</span>
+									<input type="text" id="price"   class="form-control"  placeholder="价格" name="price" value="">
+								</div>
+							</div>
+
+							<div class="col-md-2 title">商品介绍</div>
+
+							<div class="col-md-10 data editer">
+								<textarea name="content" style="width:800px;height:400px;" id="detailTitle"></textarea>
+							</div>
+
 						</div>
-
-						<div class="col-md-2 title">商品介绍</div>
-
-						<div class="col-md-10 data editer">
-							<textarea name="content" style="width:800px;height:400px;" id="detailTitle"></textarea>
-						</div>
-
 					</div>
-				</div>
-                            
-				<!--图片上传-->
-				<div class="tab-pane" id="pic_upload">
-                                <div class="row data-type">                                  
-								 <!-- 颜色图片 -->
-								 <div class="btn-group">
-					                 <button type="button" ng-click="image_entity={}" class="btn btn-default" title="新建" data-target="#uploadModal"  data-toggle="modal"  ><i class="fa fa-file-o"></i> 新建</button>
-                             		                 
-					             </div>
-								 
-								 <table class="table table-bordered table-striped table-hover dataTable">
-					                    <thead>
-					                        <tr>
-					                            
-											    <th class="sorting">颜色</th>
-											    <th class="sorting">图片</th>
-												<th class="sorting">操作</th>
-							            </thead>
-					                    <tbody id="picList">
 
-					                    </tbody>
-								 </table>
-                                </div>
-                            </div>
+					<!--图片上传-->
+			<div class="tab-pane" id="pic_upload">
+									<div class="row data-type">
+									 <!-- 颜色图片 -->
+									 <div class="btn-group">
+										 <button type="button" ng-click="image_entity={}" class="btn btn-default" title="新建" data-target="#uploadModal"  data-toggle="modal"  ><i class="fa fa-file-o"></i> 新建</button>
 
-				<!--规格-->
-				<div class="tab-pane" id="spec">
-	                                <div class="row data-type">
+									 </div>
 
-		                                <div ng-repeat="pojo in specList">
-			                                <div class="col-md-2 title">{{pojo.text}}</div>
-					                        <div class="col-md-10 data">
+									 <table class="table table-bordered table-striped table-hover dataTable">
+											<thead>
+												<tr>
+													<th class="sorting"></th>
+													<th class="sorting">图片</th>
 
-					                            <span ng-repeat="option in pojo.options">
-					                            	<input ng-checked="" ng-click="" type="checkbox" >
-					                            </span>
+											</thead>
+											<tbody id="picList">
 
-					                        </div>
-		                                </div>
+											</tbody>
+									 </table>
+									</div>
+								</div>
 
-	                                </div>
-	                                <div class="row data-type">
-	                                	 <table class="table table-bordered table-striped table-hover dataTable">
-						                    <thead>
-						                        <tr>
-												    <th class="sorting" ng-repeat="pojo in entity.goodsDesc.specificationItems">{{pojo.attributeName}}</th>
-												    <th class="sorting">价格</th>
-												    <th class="sorting">库存</th>
-												    <th class="sorting">是否启用</th>
-												    <th class="sorting">是否默认</th>
-											    </tr>
-								            </thead>
-						                    <tbody>
-						                      <tr ng-repeat="pojo in entity.itemList">
-										            <td id="productSpecificationsId">
-
-										            </td>
-										            <td>
-										            	<input class="form-control" ng-model="pojo.num"  placeholder="库存数量" >
-										            </td>
-										            <td>
-										             	<input type="checkbox"  ng-model="pojo.status" ng-true-value="1" ng-false-value="0">
-										            </td>
-										            <td>
-										                <input type="checkbox"  ng-model="pojo.isDefault"  ng-true-value="1" ng-false-value="0">
-										            </td>
-						                      </tr>
-
-						                    </tbody>
-									 	</table>
-
-	                                </div>
-
-	                            </div>
-			</div>
-                            
+					<!--规格-->
 		</div>
+                            
+	</div>
 		<!--tab内容/-->
 		<!--表单内容/-->
 							 
 	</div>
-	<div class="btn-toolbar list-toolbar">
-		<button class="btn btn-primary" ng-click="save()"><i class="fa fa-save"></i>保存商品</button>
+	<div class="btn-toolbar list-toolbar" id="modal-footer">
+		<button class="btn btn-primary" onclick="saveProduct()"><i class="fa fa-save"></i>保存商品</button>
 		<button class="btn btn-default" >返回列表</button>
 	</div>
 </section>
@@ -200,13 +149,14 @@
 						<table>
 							<tr>
 								<td>
-								<input type="file" id="file" />				                
-					                <button class="btn btn-primary" type="button" onclick="uploadFile()">
+								<input type="file" id="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" onchange="selectImage(this)"/>
+
+					                <button class="btn btn-primary" type="button" onclick="uploadImg()">
 				                   		上传
 					                </button>	
 					            </td>
-								<td id="addImg">
-									<img  id="copyImg" src="{{image_entity.url}}" width="200px" height="200px">
+								<td >
+									<img  id="addImg" src="" width="200px" height="200px">
 								</td>
 							</tr>						
 						</table>
@@ -215,27 +165,16 @@
 			 </table>				
 			
 		</div>
-		<div class="modal-footer">						
-			<button class="btn btn-success"  data-dismiss="modal" onclick="" aria-hidden="true">保存</button>
+		<div class="modal-footer" >
+			<button class="btn btn-success"  data-dismiss="modal" onclick="saveProduct()" aria-hidden="true">保存</button>
 			<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
 		</div>
-		{{image_entity}}
+
 	  </div>
 	</div>
 </div>
 
-            
-            <!-- 正文区域 /-->
-<script type="text/javascript">
-
-	var editor;
-	KindEditor.ready(function(K) {
-		editor = K.create('textarea[name="content"]', {
-			allowFileManager : true
-		});
-	});
-
-</script>
+<!-- 正文区域 /-->
        
 </body>
 

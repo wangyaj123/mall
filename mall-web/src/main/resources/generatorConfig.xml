@@ -32,7 +32,7 @@
                 <property name="enableSubPackages" value="true"/>
             </javaClientGenerator>
 
-            <table tableName="ums_cart" domainObjectName="Cart"
+            <table tableName="pms_product_specifications" domainObjectName="Specifications"
                    enableCountByExample="false"
                    enableUpdateByExample="false"
                    enableDeleteByExample="false"

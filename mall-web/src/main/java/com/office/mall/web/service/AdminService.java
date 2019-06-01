@@ -6,5 +6,8 @@ import com.office.mall.web.commons.CommonResult;
 public interface AdminService {
 
     CommonResult select(AdminRequest request);
-    CommonResult register(AdminRequest request);
+    CommonResult saveAdmin(AdminRequest request);
+    CommonResult queryList(AdminRequest request);
+    CommonResult changeStatus(AdminRequest request);
+    CommonResult setPwd(AdminRequest request);
 }

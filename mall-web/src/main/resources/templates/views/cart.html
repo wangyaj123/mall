@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="../../static/js/plugins/jquery-1.11.3.min.js" th:src="@{../../static/js/plugins/jquery-1.11.3.min.js}"></script>
 	<script type="text/javascript" src="../../static/js/plugins/angular.min.js" th:src="@{../../static/js/plugins/angular.min.js}"></script>
 	<script type="text/javascript" th:src="@{../../static/js/pages/view-index.js}" src="../../static/js/pages/view-index.js"></script>
-	<script type="text/javascript" th:src="@{../../static/js/pages/product.js}" src="../../static/js/pages/product.js"></script>
+	<script type="text/javascript" th:src="@{../../static/js/pages/cart.js}" src="../../static/js/pages/cart.js"></script>
 </head>
 
 <body  onload="findCartList()">
@@ -66,38 +66,27 @@
 					<div class="yui3-u-1-8">操作</div>
 				</div>
 				<div class="cart-item-list" ng-repeat="cart in cartList">
-					<div class="cart-shop">
-						<input type="checkbox" name="" id="checkbox" value="" />
-						<span class="shopname self">{{cart.sellerName}}  【商家ID:{{cart.sellerId}}】</span>
-					</div>
 					<div class="cart-body">
-						<div class="cart-list" ng-repeat="item in cart.orderItemList">
-							<ul class="goods-list yui3-g">
-								<li class="yui3-u-11-24">
-									<div class="good-item">
-										<div class="item-img"><img src="{{item.picPath}}" /></div>
-										<div class="item-msg">{{item.title}}</div>
-									</div>
-								</li>
-								
-								<li class="yui3-u-1-8"><span class="price">{{item.price}}</span></li>
-								<li class="yui3-u-1-8">
-
-									<input autocomplete="off" th:type="text" value="1" minnum="1" class="itxt" id="num" />
-								</li>
-								<li class="yui3-u-1-8"><span class="sum">{{item.totalFee}}</span></li>
-								<li class="yui3-u-1-8">
-									<a href="#none">删除</a><br />
-									<a href="#none">移到我的关注</a>
-								</li>
-							</ul>
+						<div class="cart-list" ng-repeat="item in cart.orderItemList" id="cartList">
 						</div>
-						
-						
+						<div class="cart-tool">
+							<div class="select-all">
+								<input type="checkbox" name="selAll" id="selAll" value="" />
+								<span>全选</span>
+							</div>
+							<div class="option">
+								<a href="#none">删除选中的商品</a>
+								<a href="#none">移到我的关注</a>
+								<a href="#none">清除下柜商品</a>
+							</div>
+							<div class="toolbar" id="selProduct">
+								<div class="sumbtn">
+									<a class="sum-btn" href="/getOrderInfo" target="_blank">结算</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				
-				
 			</div>
 		</div>
 	</div>
@@ -235,10 +224,7 @@
 </div>
 <!--页面底部END-->
 
-<script type="text/javascript" src="../../static/js/plugins/jquery-1.11.3.min.js" th:src="@{../../static/js/plugins/jquery-1.11.3.min.js}"></script>
-<script type="text/javascript" src="js/plugins/jquery.easing/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/plugins/sui/sui.min.js"></script>
-<script type="text/javascript" src="js/widget/nav.js"></script>
+
 </body>
 
 </html>

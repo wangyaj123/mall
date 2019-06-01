@@ -1,6 +1,5 @@
 package com.office.mall.dao;
 
-import com.office.mall.entiy.Product;
 import com.office.mall.request.ProductKey;
 import com.office.mall.entiy.ProductWithBLOBs;
 import com.office.mall.request.ProductRequest;
@@ -26,5 +25,6 @@ public interface ProductMapper {
 
     int updateByPrimaryKeyWithBLOBs(ProductWithBLOBs record);
 
-    int updateByPrimaryKey(Product record);
+    int updateByPrimaryKey(ProductRequest record);
+    int changeStatus(ProductRequest record);
 }

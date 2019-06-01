@@ -22,4 +22,5 @@ public interface ShopMapper {
     int updateByPrimaryKeySelective(Shop record);
 
     int updateById(ShopRequest request);
+    Shop selectByNameAndPwd(ShopRequest request);
 }

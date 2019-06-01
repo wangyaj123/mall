@@ -9,6 +9,16 @@ public class AdminRequest {
 
     private String password;
 
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
+
+    private String newPassword;
+
     private String icon;
 
     private String email;

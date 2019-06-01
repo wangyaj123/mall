@@ -1,0 +1,128 @@
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>管理</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../../static/css/AdminLTE.css" th:href="@{../../static/css/AdminLTE.css}">
+    <link rel="stylesheet" href="../../static/css/_all-skins.min.css" th:href="@{../../static/css/_all-skins.min.css}">
+    <link rel="stylesheet" href="../../static/css/style.css" th:href="@{../../static/css/style.css}">
+    <link rel="stylesheet" href="../../static/css/bootstrap/bootstrap.min.css" th:href="@{../../static/css/bootstrap/bootstrap.min.css}">
+
+    <script type="text/javascript" src="../../static/js/plugins/jquery-1.11.3.min.js" th:src="@{../../static/js/plugins/jquery-1.11.3.min.js}"></script>
+    <script type="text/javascript" src="../../static/js/plugins/bootstrap.min.js" th:src="@{../../static/js/plugins/bootstrap.min.js}"></script>
+    <!-- 引入angular的js -->
+    <script type="text/javascript" src="../../static/js/plugins/angular.min.js" th:src="@{../../static/js/plugins/angular.min.js}"></script>
+    <!-- 引入分页相关的JS和CSS -->
+    <script type="text/javascript" src="../../static/js/plugins/pagination.js" th:src="@{../../static/js/plugins/pagination.js}"></script>
+    <link rel="stylesheet" href="../../static/css/plugins/pagination.css" th:href="@{../../static/css/plugins/pagination.css}">
+    <script type="text/javascript" src="../../static/js/pages/admin-index.js" th:src="@{../../static/js/pages/admin-index.js}"></script>
+</head>
+<body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" onload="findAdmin()" >
+  <!-- .box-body -->
+                    <div class="box-header with-border">
+                        <h3 class="box-title">管理</h3>
+                    </div>
+
+                    <div class="box-body">
+
+                        <!-- 数据表格 -->
+                        <div class="table-box">
+
+                            <!--工具栏-->
+                            <div class="pull-left">
+                                <div class="form-group form-inline">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default" title="新建" data-toggle="modal" data-target="#editModal" ng-click="entity={}"><i class="fa fa-file-o"></i> 创建</button>
+                                        <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i class="fa fa-refresh"></i> 刷新</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-tools pull-right">
+                                <div class="has-feedback">
+                                    管理员ID：<input  id="adminId">
+                                    管理员账号： <input  id="name">
+                                    状态：
+                                    <input type="radio" value="" name="status" checked="checked" />全部
+                                    <input type="radio" value="0" name="status"  />禁用
+                                    <input type="radio" value="1" name="status" />启用
+                                    <button class="btn btn-default" onclick="findAdmin()">查询</button>
+                                </div>
+                            </div>
+                            <!--工具栏/-->
+
+			                  <!--数据列表-->
+			                  <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
+			                      <thead>
+			                          <tr>
+			                              <th class="" style="padding-right:0px">
+			                                  <input id="selall" type="checkbox" class="icheckbox_square-blue">
+			                              </th> 
+                                          <th class="sorting">管理员ID</th>
+                                          <th class="sorting">管理员账号</th>
+                                          <th class="text-center">状态</th>
+					                      <th class="text-center">操作</th>
+			                          </tr>
+			                      </thead>
+			                      <tbody id="adminList">
+
+			                      </tbody>
+			                  </table>
+			                  <!--数据列表/-->                        
+                        </div>
+                        <!-- 数据表格 /-->
+                        <!-- 分页 -->
+                        <div class="page-list ng-isolate-scope" conf="paginationConf">
+                            <ul class="pagination" ng-show="conf.totalItems > 0">
+                            <li ng-class="{disabled: conf.currentPage == 1}" ng-click="prevPage()" class="disabled">
+                                <span>«</span>
+                            </li><!-- ngRepeat: item in pageList track by $index -->
+                            <li ng-repeat="item in pageList track by $index" ng-class="{active: item == conf.currentPage, separate: item == '...'}" ng-click="changeCurrentPage(item)" class="ng-scope active">
+                            <span class="ng-binding">1</span>
+                            </li><!-- end ngRepeat: item in pageList track by $index -->
+                            <li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="nextPage()" class="disabled">
+                                <span>»</span></li>
+                            </ul>
+                            <div class="page-total" ng-show="conf.totalItems > 0">第
+                            <input type="text" ng-model="jumpPageNum" ng-keyup="jumpToPage($event)" class="ng-pristine ng-valid">页 每页
+                            <select ng-model="conf.itemsPerPage" ng-options="option for option in conf.perPageOptions " class="ng-valid ng-dirty">
+                                <option value="0" selected="selected">10</option>
+                                <option value="1">20</option>
+                                <option value="2">30</option>
+                                <option value="3">40</option>
+                                <option value="4">50</option>
+                            </select>/共<strong class="ng-binding">10</strong>条</div>
+                            <div class="no-items ng-hide" ng-show="conf.totalItems <= 0">
+                                暂无数据
+                            </div>
+                        </div>
+                        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3 id="myModalLabel">编辑</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-bordered table-striped" width="800px">
+                                            <tbody><tr>
+                                                <td>管理员账号</td>
+                                                <td>
+                                                    <input class="form-control ng-pristine ng-valid" id="username" placeholder="管理员账号">
+                                                </td>
+                                            </tr>
+
+                                            </tbody></table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-dismiss="modal" aria-hidden="true" onclick="saveAdmin()">保存</button>
+                                        <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     </div>
+
+</body>
+</html>

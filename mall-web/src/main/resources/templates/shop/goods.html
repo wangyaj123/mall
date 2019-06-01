@@ -25,7 +25,7 @@
 	<script type="text/javascript" th:src="@{../../static/js/pages/product.js}" src="../../static/js/pages/product.js"></script>
 </head>
 
-<body class="hold-transition skin-red sidebar-mini" ng-app="mall"  onload="getGoods()" >
+<body class="hold-transition skin-red sidebar-mini" ng-app="mall"  onload="getProductList()" >
   <!-- .box-body -->
                 
   <div class="box-header with-border">
@@ -41,7 +41,7 @@
 		  <div class="pull-left">
                                 <div class="form-group form-inline">
                                     <div class="btn-group">
-                                        <a href="goods_edit.html"  class="btn btn-default">新建</a>
+                                        <a href="/shop/goodsEdit"  class="btn btn-default">新建</a>
                                         <button type="button" class="btn btn-default" title="删除" ><i class="fa fa-trash-o"></i> 删除</button>
                                         <button type="button" class="btn btn-default" title="提交审核" ><i class="fa fa-check"></i> 提交审核</button>
                                         <button type="button" class="btn btn-default" title="屏蔽" onclick='confirm("你确认要屏蔽吗？")'><i class="fa fa-ban"></i> 屏蔽</button>
@@ -51,14 +51,14 @@
                             </div>
 		  <div class="box-tools pull-right">
                                 <div class="has-feedback">
-                                  		状态：<select ng-model="searchEntity.auditStatus">
+                                  		状态：<select ng-model="searchEntity.auditStatus" id="select">
                                          	<option value="" name="scope">全部</option>
                                          	<option value="0" name="scope">未申请</option>
                                          	<option value="1" name="scope">审核通过</option>
                                          	<option value="2" name="scope">审核未通过</option>
                                         </select>
-							                  商品名称：<input type="text" ng-model="searchEntity.goodsName">									
-									<button class="btn btn-default" ng-click="reloadList()">查询</button>                                    
+							                  商品名称：<input type="text" id="productName" name="productName">
+									<button class="btn btn-default" onclick="getProductList()">查询</button>
                                 </div>
                             </div>
 		  <!--工具栏/-->

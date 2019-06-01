@@ -32,14 +32,10 @@
 
 		<div class="box-tools pull-right">
 			<div class="has-feedback">
-				公司名称：<input  >
-				店铺名称： <input  >
-				状态：
-				<input type="radio" value="3" name="scope" checked="checked" />全部
-				<input type="radio" value="0" name="scope"  />待审核
-				<input type="radio" value="1" name="scope" />已审核
-				<input type="radio" value="2" name="scope" />审核未通过
-				<button class="btn btn-default" onclick="searchShopBy()">查询</button>
+				公司名称：<input name="shopName" id="shopName" >
+				店铺名称： <input name="companyName" id="companyNme">
+				<input name="status" id="status" th:value="0" hidden>
+				<button class="btn btn-default" onclick="searchShop()" >查询</button>
 			</div>
 		</div>
 		<!--工具栏/-->
@@ -167,8 +163,6 @@
 			
 		</div>
 		<div class="modal-footer" id="seller">
-            <button  class="btn btn-danger" data-dismiss="modal" aria-hidden="true">关闭商家</button>
-			<button id="check0" class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
 		</div>
 	  </div>
 	</div>

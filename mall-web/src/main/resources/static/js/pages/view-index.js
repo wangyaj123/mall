@@ -22,13 +22,16 @@ function search(){
                 console.log(data);
                 $("#picLBxxl").html('');
                 $.each(data.data.list, function (i, obj) {
+                    if(obj.verifyStatus == 1){
                     $("#picLBxxl").append(
                         "<li class='yui3-u-1-6'><dl class='picDl huozhe'><dd>" +
-                        "<a href='/productInfo?id="+obj.id+"' th:href='@{/productInfo}' class='pic'><img src='"+obj.pic+ "' alt='' /></a>" +
+                        "<a href='/productInfo?id="+obj.id+"'class='pic'><img src='"+obj.pic+ "' alt='' /></a>" +
                         "<div class='like-text'>" +
                         "<p>"+obj.name+"</p>" +
                         "<h3>"+obj.price+"</h3>" +
-                        "</div></dd></dl></li>")});
+                        "</div></dd></dl></li>")
+                    }
+                });
             }else{
                 alert(data.message);
             }

@@ -18,12 +18,11 @@
     <!-- 引入分页相关的JS和CSS -->
     <script type="text/javascript" src="../../static/js/plugins/pagination.js" th:src="@{../../static/js/plugins/pagination.js}"></script>
     <link rel="stylesheet" href="../../static/css/plugins/pagination.css" th:href="@{../../static/css/plugins/pagination.css}">
-
+    <script type="text/javascript" th:src="@{../../static/js/pages/product.js}" src="../../static/js/pages/product.js"></script>
 </head>
 
-<body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" ng-controller="goodsController" ng-init="searchEntity={auditStatus:'0'};findItemCatList()">
+<body class="hold-transition skin-red sidebar-mini"  onload="getProductList()" >
   <!-- .box-body -->
-                
                     <div class="box-header with-border">
                         <h3 class="box-title">商品审核</h3>
                     </div>
@@ -37,9 +36,9 @@
                             <div class="pull-left">
                                 <div class="form-group form-inline">
                                     <div class="btn-group">
-                                        <button type="button" ng-click="dele()" class="btn btn-default" title="删除" ><i class="fa fa-trash-o"></i> 删除</button>
-                                        <button type="button" ng-click="updateStatus('1')" class="btn btn-default" title="审核通过" ><i class="fa fa-check"></i> 审核通过</button>
-                                        <button type="button" ng-click="updateStatus('2')" class="btn btn-default" title="驳回" ><i class="fa fa-ban"></i> 驳回</button>                                  
+                                        <button type="button" onclick="dele()" class="btn btn-default" title="删除" ><i class="fa fa-trash-o"></i> 删除</button>
+                                        <button type="button" onclick="updateStatus('1')" class="btn btn-default" title="审核通过" ><i class="fa fa-check"></i> 审核通过</button>
+                                        <button type="button" onclick="updateStatus('2')" class="btn btn-default" title="驳回" ><i class="fa fa-ban"></i> 驳回</button>
                                         <button type="button" class="btn btn-default" title="刷新" ><i class="fa fa-refresh"></i> 刷新</button>
                                     </div>
                                 </div>
@@ -47,7 +46,7 @@
                             <div class="box-tools pull-right">
                                 <div class="has-feedback">
                                     商品名称：<input >
-									<button class="btn btn-default" >查询</button>                                    
+									<button class="btn btn-default" onclick="getProductList()">查询</button>
                                 </div>
                             </div>
                             <!--工具栏/-->
@@ -62,32 +61,13 @@
 										  <th class="sorting_asc">商品ID</th>
 									      <th class="sorting">商品名称</th>
 									      <th class="sorting">商品价格</th>
-									      <th class="sorting">一级分类</th>
-									      <th class="sorting">二级分类</th>
-									      <th class="sorting">三级分类</th>
+									      <th class="sorting">商品分类</th>
 									      <th class="sorting">状态</th>									     						
 					                      <th class="text-center">操作</th>
 			                          </tr>
 			                      </thead>
-			                      <tbody>
-			                          <tr ng-repeat="entity in list">
-			                              <td><input ng-click="updateSelection($event,entity.id)" type="checkbox"></td>			                              
-				                          <td>{{entity.id}}</td>
-									      <td>{{entity.goodsName}}</td>
-									      <td>{{entity.price}}</td>
-									      <td>{{itemCatList[entity.category1Id]}}</td>
-									      <td>{{itemCatList[entity.category2Id]}}</td>
-									      <td>{{itemCatList[entity.category3Id]}}</td>
-		                                  <td>		                                  
-		                                  	<span>
-		                                  		{{status[entity.auditStatus]}}
-		                                  	</span>
-		                                  	
-		                                  </td>		                                  
-		                                  <td class="text-center">                                          
-		                                 	  <button type="button" class="btn bg-olive btn-xs" >详情</button>                  
-		                                  </td>
-			                          </tr>
+			                      <tbody id="adminGoods">
+
 			                      </tbody>
 			                  </table>
 			                  <!--数据列表/-->                        
@@ -96,11 +76,100 @@
                         </div>
                         <!-- 数据表格 /-->
                          <!-- 分页 -->
-						<tm-pagination conf="paginationConf"></tm-pagination>
-                        
-                     </div>
+                        <div class="page-list ng-isolate-scope" conf="paginationConf">
+                            <ul class="pagination" ng-show="conf.totalItems > 0">
+                                <li ng-class="{disabled: conf.currentPage == 1}" ng-click="prevPage()" class="disabled">
+                                    <span>«</span>
+                                </li><!-- ngRepeat: item in pageList track by $index -->
+                                <li ng-repeat="item in pageList track by $index" ng-class="{active: item == conf.currentPage, separate: item == '...'}" ng-click="changeCurrentPage(item)" class="ng-scope active">
+                                    <span class="ng-binding">1</span>
+                                </li><!-- end ngRepeat: item in pageList track by $index -->
+                                <li ng-class="{disabled: conf.currentPage == conf.numberOfPages}" ng-click="nextPage()" class="disabled">
+                                    <span>»</span></li>
+                            </ul>
+                            <div class="page-total" ng-show="conf.totalItems > 0">第
+                                <input type="text" ng-model="jumpPageNum" ng-keyup="jumpToPage($event)" class="ng-pristine ng-valid">页 每页
+                                <select ng-model="conf.itemsPerPage" ng-options="option for option in conf.perPageOptions " class="ng-valid ng-dirty">
+                                    <option value="0" selected="selected">10</option>
+                                    <option value="1">20</option>
+                                    <option value="2">30</option>
+                                    <option value="3">40</option>
+                                    <option value="4">50</option>
+                                </select>/共<strong class="ng-binding">10</strong>条</div>
+                            <div class="no-items ng-hide" ng-show="conf.totalItems <= 0">
+                                暂无数据
+                            </div>
+                        </div>
+
+
+                    </div>
                     <!-- /.box-body -->
-        
+
+  <div class="modal fade" id="goodModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">商品详情</h3>
+              </div>
+              <div class="modal-body">
+
+                  <ul class="nav nav-tabs">
+                      <li class="active"><a href="#home" data-toggle="tab">类别信息</a></li>
+                      <li><a href="#linkman" data-toggle="tab">商品信息</a></li>
+                  </ul>
+
+                  <!-- 选项卡开始 -->
+                  <div id="myTabContent" class="tab-content">
+                      <div class="tab-pane active in" id="home">
+                          <br>
+                          <table id="detail" class="table table-bordered table-striped"  width="800px">
+                              <tr>
+                                  <td>商品名称</td>
+                                  <td id="productName"></td>
+                              </tr>
+                              <tr>
+                                  <td>店铺名称</td>
+                                  <td id="shopName"></td>
+                              </tr>
+                              <tr>
+                                  <td>商品分类</td>
+                                  <td id="category"></td>
+                              </tr>
+                              <tr>
+                                  <td>所属品牌</td>
+                                  <td id="brand"></td>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="tab-pane fade" id="linkman">
+                          <br>
+                          <table class="table table-bordered table-striped" >
+                              <tr>
+                                  <td>商品描述</td>
+                                  <td id="subTitle"></td>
+                              </tr>
+                              <tr>
+                                  <td>商品图片</td>
+                                  <td id="proImg">
+                                      <img src="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>商品价格</td>
+                                  <td id="price"></td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+                  <!-- 选项卡结束 -->
+              </div>
+              <div class="modal-footer" id="modal">
+              </div>
+          </div>
+      </div>
+  </div>
+
 </body>
 
 </html>

@@ -65,6 +65,10 @@ public class HttpController {
     public String shopPwdPage() {
         return "shop/password";
     }
+    @RequestMapping("/admin/password")
+    public String adminPwdPage() {
+        return "admin/password";
+    }
     @RequestMapping("/admin")
     public String adminLoginPage() {
         return "admin/login";
@@ -89,9 +93,13 @@ public class HttpController {
     public String adminContentPage() {
         return "admin/content";
     }
+    @RequestMapping("/admin/sysUser")
+    public String adminUserPage() {
+        return "admin/sysUser";
+    }
     @RequestMapping("/admin/category")
     public String adminCategoryPage() {
-        return "admin/contentCategory";
+        return "sysUser";
     }
     @RequestMapping("/admin/item")
     public String adminItemPage() {
@@ -116,5 +124,9 @@ public class HttpController {
     @RequestMapping("/productInfo")
     public String ProductInfoPage() {
         return "views/product-list";
+    }
+    @RequestMapping("/getOrderInfo")
+    public String OrderInfoPage() {
+        return "views/getOrderInfo";
     }
 }

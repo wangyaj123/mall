@@ -5,7 +5,7 @@ function loginUser(){
         "username":username,
         "password":password
     };
-    var URL = "api/admin/login";
+    var URL = "/api/admin/login";
     Login_AJAXFunction(objJson,URL);
 
 
@@ -26,6 +26,7 @@ function Login_AJAXFunction(objJson,URL) {
                 console.log(data);
                 //将用户名保存在session中
                 localStorage.setItem("username",data.data.username);
+                localStorage.setItem("adminId",data.data.id);
                 //页面跳转
                 window.location.href = "/admin/page";
             }else{

@@ -17,10 +17,11 @@
 	<!-- 引入分页相关的JS和CSS -->
 	<script type="text/javascript" src="../../static/js/plugins/pagination.js" th:src="@{../../static/js/plugins/pagination.js}"></script>
 	<link rel="stylesheet" href="../../static/css/plugins/pagination.css" th:href="@{../../static/css/plugins/pagination.css}">
-    
+	<script type="text/javascript" src="../../static/js/page/spec.js" th:src="@{../../static/js/pages/spec.js}"></script>
+
 </head>
 
-<body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" ng-controller="specificationController">
+<body class="hold-transition skin-red sidebar-mini"onload="findSpecList()">
   <!-- .box-body -->                
                     <div class="box-header with-border">
                         <h3 class="box-title">规格管理</h3>
@@ -42,7 +43,7 @@
                             </div>
                             <div class="box-tools pull-right">
                                 <div class="has-feedback">
-							                    规格名称：<input  >									
+							                    规格名称：<input  id="specName">
 									<button class="btn btn-default" >查询</button>                                    
                                 </div>
                             </div>
@@ -59,7 +60,7 @@
 					                      <th class="text-center">操作</th>
 			                          </tr>
 			                      </thead>
-			                      <tbody>
+			                      <tbody id="specList">
 			                          <tr ng-repeat="entity in list">
 			                              <td><input  type="checkbox" ng-click="updateSelection($event,entity.id)"></td>			                              
 				                          <td>{{entity.id}}</td>

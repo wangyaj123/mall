@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="../../static/js/plugins/angular.min.js" th:src="@{../../static/js/plugins/angular.min.js}"></script>
 	<script type="text/javascript" th:src="@{../../static/js/pages/view-index.js}" src="../../static/js/pages/view-index.js"></script>
 	<script type="text/javascript" th:src="@{../../static/js/pages/product.js}" src="../../static/js/pages/product.js"></script>
+	<script type="text/javascript" th:src="@{../../static/js/pages/cart.js}" src="../../static/js/pages/cart.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#head").load("/header");
@@ -178,18 +179,18 @@
 						<dl>
 							<dt>
 								<div class="fl title">
-									<i>网络</i>
+									<i>规格</i>
 								</div>
 							</dt>
 
 							<dd><a href="javascript:;"
 								   class="{{isSelected('网络','移动3G')?'selected':''}}"
-								   ng-click="selectSpecification('网络','移动3G')">移动3G
+								   ng-click="selectSpecification('网络','移动3G')">15寸
 								<span title="点击取消选择">&nbsp;</span>
 							</a></dd>
 							<dd><a href="javascript:;"
 								   class="{{isSelected('网络','移动4G')?'selected':''}}"
-								   ng-click="selectSpecification('网络','移动4G')">移动4G
+								   ng-click="selectSpecification('网络','移动4G')">14寸
 								<span title="点击取消选择">&nbsp;</span>
 							</a></dd>
 						</dl>
@@ -200,18 +201,18 @@
 						<div class="fl title">
 							<div class="control-group">
 								<div class="controls">
-									<input autocomplete="off" ng-model="num" type="text" value="1" minnum="1" class="itxt" />
+									<input autocomplete="off" ng-model="num" type="text" value="1" minnum="1" class="itxt" id="num" name="num" />
 									<a href="javascript:void(0)" class="increment plus" ng-click="addNum(1)">+</a>
 									<a href="javascript:void(0)" class="increment mins" ng-click="addNum(-1)">-</a>
 								</div>
 							</div>
 						</div>
-						<div class="fl">
+						<div class="fl" id="addToCart">
 							<ul class="btn-choose unstyled">
-								<li>
-									<a  class="sui-btn  btn-danger addshopcar" onclick="addToCart(id)">加入购物车</a>
-								</li>
-							</ul>
+							<li>
+								<a  class="sui-btn  btn-danger addshopcar" onclick="addToCart(id,$('#num').val())">加入购物车</a>
+							</li>
+						</ul>
 						</div>
 					</div>
 				</div>
@@ -223,21 +224,7 @@
 	
 <!--页面底部  开始 -->
 <div id="footer"></div>
-<script type="text/javascript">
-$(function(){
-	$("#service").hover(function(){
-		$(".service").show();
-	},function(){
-		$(".service").hide();
-	});
-	$("#shopcar").hover(function(){
-		$("#shopcarlist").show();
-	},function(){
-		$("#shopcarlist").hide();
-	});
 
-})
-</script>
 
 <!--页面底部  结束 -->
 </body>

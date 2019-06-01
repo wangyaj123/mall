@@ -1,19 +1,19 @@
 package com.office.mall.request;
 
 public class ShopRequest {
-    private Integer shopId;
+    private Integer id;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    private String account;
 
     private String shopName;
-
-    private String companyName;
-
-    public Integer getShopId() {
-        return shopId;
-    }
-
-    public void setShopId(Integer shopId) {
-        this.shopId = shopId;
-    }
 
     public String getShopName() {
         return shopName;
@@ -22,6 +22,26 @@ public class ShopRequest {
     public void setShopName(String shopName) {
         this.shopName = shopName;
     }
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    private String companyName;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
 
     public String getCompanyName() {
         return companyName;

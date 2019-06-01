@@ -19,5 +19,21 @@ public class AdminController {
     public CommonResult login(@RequestBody AdminRequest request){
         return adminService.select(request);
     }
+    @RequestMapping(value = "/query/list",method = RequestMethod.POST)
+    public CommonResult queryList(@RequestBody AdminRequest request){
+        return adminService.queryList(request);
+    }
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
+    public CommonResult saveAdmin(@RequestBody AdminRequest request){
+        return adminService.saveAdmin(request);
+    }
+    @RequestMapping(value = "/change",method = RequestMethod.POST)
+    public CommonResult changeStatus(@RequestBody AdminRequest request){
+        return adminService.changeStatus(request);
+    }
+    @RequestMapping(value = "/setPwd",method = RequestMethod.POST)
+    public CommonResult setPwd(@RequestBody AdminRequest request){
+        return adminService.setPwd(request);
+    }
 
 }

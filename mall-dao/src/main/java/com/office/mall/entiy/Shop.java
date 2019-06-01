@@ -2,7 +2,7 @@ package com.office.mall.entiy;
 
 public class Shop {
 
-    private Integer shopId;
+    private Integer id;
 
     private String account;
 
@@ -62,15 +62,13 @@ public class Shop {
         this.registerTime = registerTime;
     }
 
-    public Integer getShopId() {
-        return shopId;
+    public Integer getId() {
+        return id;
     }
 
-
-    public void setShopId(Integer shopId) {
-        this.shopId = shopId;
+    public void setId(Integer id) {
+        this.id = id;
     }
-
 
     public String getAccount() {
         return account;

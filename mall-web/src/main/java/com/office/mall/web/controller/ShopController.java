@@ -4,6 +4,7 @@ import com.office.mall.request.ShopRequest;
 import com.office.mall.web.commons.CommonResult;
 import com.office.mall.web.service.ShopService;
 import org.apache.ibatis.annotations.Param;
+import org.omg.CORBA.COMM_FAILURE;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,5 +30,9 @@ public class ShopController {
     @RequestMapping(value = "/changeStatus",method = RequestMethod.POST)
     public CommonResult changeStatus(@RequestBody ShopRequest request){
         return commonResult.success(shopService.changeStatus(request));
+    }
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public CommonResult loginShop(@RequestBody ShopRequest shopRequest){
+        return shopService.login(shopRequest);
     }
 }
