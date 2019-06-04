@@ -1,0 +1,462 @@
+mall 2019-05-09 22:41:41.630 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 996 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 22:41:41.755 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 22:41:41.755 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 22:42:01.177 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 22:42:01.333 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:42:01.474 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 22:42:01.474 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 22:42:01.505 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 22:42:01.505 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 22:42:01.505 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 22:42:01.505 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 22:42:03.286 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 22:42:14.494 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 22:42:14.494 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 31614 ms
+mall 2019-05-09 22:42:19.916 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 22:42:20.292 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:42:20.347 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 22:42:20.350 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 44.595 seconds (JVM running for 87.018)
+mall 2019-05-09 22:43:06.259 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 22:43:06.259 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 22:43:06.268 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 7 ms
+mall 2019-05-09 22:43:12.726 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 22:43:12.740 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 22:43:12.741 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 22:43:13.244 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 22:43:13.383 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 22:43:13.672 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 22:43:13.673 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 22:43:13.673 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_03.png
+mall 2019-05-09 22:43:17.303 ERROR     [http-nio-8081-exec-3]  org.thymeleaf.TemplateEngine process- [THYMELEAF][http-nio-8081-exec-3] Exception processing template "views/product-list": An error happened during template parsing (template: "class path resource [templates/views/product-list.html]" - line 95, col 47)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/views/product-list.html]" - line 95, col 47)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 95, Column = 47) Malformed markup: Attribute "type" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:90)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 40 common frames omitted
+mall 2019-05-09 22:43:17.312 ERROR     [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] log- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/views/product-list.html]" - line 95, col 47)] with root cause
+org.attoparser.ParseException: (Line = 95, Column = 47) Malformed markup: Attribute "type" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:90)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+mall 2019-05-09 22:45:46.026 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 8072 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 22:45:46.030 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 22:45:46.031 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 22:45:48.254 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 22:45:48.271 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:45:48.282 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 22:45:48.282 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 22:45:48.289 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 22:45:48.290 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 22:45:48.290 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 22:45:48.291 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 22:45:49.314 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 22:45:49.445 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 22:45:49.446 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3256 ms
+mall 2019-05-09 22:45:50.325 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 22:45:50.396 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:45:50.435 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 22:45:50.439 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.977 seconds (JVM running for 7.626)
+mall 2019-05-09 22:45:56.290 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 22:45:56.290 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 22:45:56.300 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-05-09 22:45:56.845 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 22:45:57.056 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 22:45:57.254 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/model/cartModel.js
+mall 2019-05-09 22:45:57.270 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.easing/jquery.easing.min.js
+mall 2019-05-09 22:45:57.275 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/sui/sui.min.js
+mall 2019-05-09 22:45:57.307 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.jqzoom/jquery.jqzoom.js
+mall 2019-05-09 22:45:57.320 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.jqzoom/zoom.js
+mall 2019-05-09 22:45:57.326 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /index/index.js
+mall 2019-05-09 22:45:57.579 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/dp01.png
+mall 2019-05-09 22:45:57.581 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/part03.png
+mall 2019-05-09 22:45:57.579 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/l-m01.png
+mall 2019-05-09 22:45:57.582 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/part01.png
+mall 2019-05-09 22:45:57.581 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/part02.png
+mall 2019-05-09 22:45:57.590 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/dp02.png
+mall 2019-05-09 22:45:57.624 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/dp03.png
+mall 2019-05-09 22:45:57.627 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike01.png
+mall 2019-05-09 22:45:57.627 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/dp04.png
+mall 2019-05-09 22:45:57.628 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike02.png
+mall 2019-05-09 22:45:57.633 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike03.png
+mall 2019-05-09 22:45:57.636 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike04.png
+mall 2019-05-09 22:45:57.638 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 22:45:57.641 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 22:45:57.644 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 22:45:58.555 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 22:45:58.638 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/model/cartModel.js
+mall 2019-05-09 22:45:58.699 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.easing/jquery.easing.min.js
+mall 2019-05-09 22:45:58.710 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/sui/sui.min.js
+mall 2019-05-09 22:45:58.715 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.jqzoom/jquery.jqzoom.js
+mall 2019-05-09 22:45:58.721 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery.jqzoom/zoom.js
+mall 2019-05-09 22:45:58.726 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /index/index.js
+mall 2019-05-09 22:55:57.194 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 7356 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 22:55:57.199 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 22:55:57.200 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 22:55:59.451 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 22:55:59.471 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:55:59.484 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 22:55:59.485 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 22:55:59.493 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 22:55:59.493 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 22:55:59.494 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 22:55:59.494 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 22:56:00.521 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 22:56:00.657 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 22:56:00.658 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3290 ms
+mall 2019-05-09 22:56:01.410 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 22:56:01.488 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 22:56:01.521 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 22:56:01.525 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.027 seconds (JVM running for 6.085)
+mall 2019-05-09 22:57:29.363 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 22:57:29.364 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 22:57:29.373 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 9 ms
+mall 2019-05-09 22:57:29.794 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 22:57:29.806 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 22:57:29.970 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 22:57:30.100 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 22:57:33.827 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 22:57:33.836 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 22:57:33.837 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 22:57:33.871 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 22:57:33.902 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:08:07.797 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 6216 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:08:07.801 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:08:07.802 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:08:09.771 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:08:09.789 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:08:09.809 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:08:09.810 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:08:09.817 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:08:09.818 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:08:09.818 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:08:09.818 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:08:10.926 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:08:14.185 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:08:14.186 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 6283 ms
+mall 2019-05-09 23:08:16.520 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:08:16.682 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:08:16.721 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:08:16.725 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 10.092 seconds (JVM running for 11.385)
+mall 2019-05-09 23:09:33.470 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:09:33.471 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:09:33.488 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 17 ms
+mall 2019-05-09 23:09:34.182 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:09:34.196 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:09:34.244 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike03.png
+mall 2019-05-09 23:09:34.245 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike01.png
+mall 2019-05-09 23:09:34.246 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike02.png
+mall 2019-05-09 23:09:34.246 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:09:34.247 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike04.png
+mall 2019-05-09 23:09:34.860 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:09:35.569 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:09:35.678 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:09:35.678 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike01.png
+mall 2019-05-09 23:09:35.679 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike02.png
+mall 2019-05-09 23:09:35.680 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike03.png
+mall 2019-05-09 23:09:35.685 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike04.png
+mall 2019-05-09 23:09:35.693 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:09:35.868 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:15:40.024 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 7088 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:15:40.075 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:15:40.084 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:16:00.945 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:16:00.960 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:16:01.004 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:16:01.004 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:16:01.043 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:16:01.044 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:16:01.044 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:16:01.044 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:16:02.159 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:16:03.545 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:16:03.546 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 23309 ms
+mall 2019-05-09 23:16:05.040 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:16:05.178 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:16:05.264 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:16:05.273 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 26.923 seconds (JVM running for 31.265)
+mall 2019-05-09 23:16:12.426 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:16:12.426 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:16:12.444 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 17 ms
+mall 2019-05-09 23:16:13.664 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:16:14.488 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:16:14.644 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:16:14.892 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:16:14.896 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:16:14.892 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:16:26.872 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:16:26.948 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:16:26.959 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:16:26.962 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:16:26.963 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:16:26.962 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:26:31.444 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 2716 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:26:31.452 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:26:31.454 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:26:33.406 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:26:33.424 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:26:33.435 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:26:33.435 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:26:33.446 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:26:33.446 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:26:33.447 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:26:33.447 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:26:34.507 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:26:34.658 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:26:34.659 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3135 ms
+mall 2019-05-09 23:26:35.474 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:26:35.544 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:26:35.617 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:26:35.622 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.121 seconds (JVM running for 8.314)
+mall 2019-05-09 23:27:18.434 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:27:18.435 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:27:18.445 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-05-09 23:27:19.250 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:27:19.324 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:27:19.383 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:27:19.833 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:27:19.852 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:27:19.858 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:27:37.556 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:27:37.634 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:27:37.641 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:27:37.647 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:27:37.647 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:27:37.652 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:28:53.541 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:28:53.561 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:28:53.565 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:28:53.621 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:28:53.625 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:28:54.505 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:28:54.885 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-05-09 23:29:10.644 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /js/plugins/jquery/jquery.min.js
+mall 2019-05-09 23:29:10.663 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike05.png
+mall 2019-05-09 23:29:10.691 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /.portal/img/like_03.png
+mall 2019-05-09 23:29:10.691 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /portal/img/like_02.png
+mall 2019-05-09 23:29:10.691 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/_/itemlike06.png
+mall 2019-05-09 23:30:07.987 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /favicon.ico
+mall 2019-05-09 23:30:08.046 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:30:08.174 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:30:08.181 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:30:08.181 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:30:08.194 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:30:08.210 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:30:08.213 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_03.png
+mall 2019-05-09 23:30:08.223 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:30:27.731 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:30:27.739 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:30:27.744 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:30:27.753 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:30:27.754 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:30:27.754 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:30:27.770 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_03.png
+mall 2019-05-09 23:30:27.772 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:51:50.497 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 7268 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:51:50.621 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:51:50.622 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:51:58.346 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:51:58.363 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:51:58.387 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:51:58.388 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:51:58.395 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:51:58.395 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:51:58.396 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:51:58.396 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:51:59.566 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:51:59.753 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:51:59.754 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 8582 ms
+mall 2019-05-09 23:52:01.161 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:52:01.401 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:52:01.452 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:52:01.519 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 15.277 seconds (JVM running for 24.965)
+mall 2019-05-09 23:52:09.139 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:52:09.140 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:52:09.156 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 16 ms
+mall 2019-05-09 23:52:19.390 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:52:19.393 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:52:19.397 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:52:19.398 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:52:19.397 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:52:19.401 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:52:19.740 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:54:11.519 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5592 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:54:11.538 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:54:11.539 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:54:13.747 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:54:13.772 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:54:13.784 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:54:13.784 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:54:13.791 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:54:13.791 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:54:13.792 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:54:13.792 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:54:14.851 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:54:16.374 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:54:16.375 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 4777 ms
+mall 2019-05-09 23:54:18.329 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:54:18.403 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:54:18.887 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:54:18.891 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 9.967 seconds (JVM running for 13.467)
+mall 2019-05-09 23:54:19.647 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:54:19.648 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:54:19.663 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 15 ms
+mall 2019-05-09 23:54:21.216 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:54:21.350 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:54:21.355 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:54:21.355 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:54:21.362 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:54:21.362 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:54:21.362 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:56:57.697 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 6992 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:56:57.702 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:56:57.703 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:57:00.205 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:57:00.220 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:57:00.230 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:57:00.231 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:57:00.237 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:57:00.238 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:57:00.238 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:57:00.238 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:57:01.262 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:57:01.534 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:57:01.537 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3749 ms
+mall 2019-05-09 23:57:02.505 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:57:02.598 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:57:02.625 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:57:02.629 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.696 seconds (JVM running for 7.291)
+mall 2019-05-09 23:58:24.673 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:58:24.673 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:58:24.683 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 9 ms
+mall 2019-05-09 23:58:25.240 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:58:25.242 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:58:25.249 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:58:25.260 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:58:25.265 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:58:25.266 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:58:25.386 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:58:29.261 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:58:29.261 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:58:29.263 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:58:29.275 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:58:29.277 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:58:29.275 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:58:29.297 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-05-09 23:59:28.376 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 1664 (D:\J\GraduationProject\mall\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall)
+mall 2019-05-09 23:59:28.394 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-05-09 23:59:28.398 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-05-09 23:59:29.903 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-05-09 23:59:29.918 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:59:29.928 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-05-09 23:59:29.929 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-05-09 23:59:29.935 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-05-09 23:59:29.935 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-05-09 23:59:29.936 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-05-09 23:59:29.936 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-05-09 23:59:30.958 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-05-09 23:59:31.083 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-05-09 23:59:31.084 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2540 ms
+mall 2019-05-09 23:59:31.909 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-05-09 23:59:31.976 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-05-09 23:59:31.999 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-05-09 23:59:32.002 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.521 seconds (JVM running for 5.913)
+mall 2019-05-09 23:59:36.955 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-05-09 23:59:36.956 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-05-09 23:59:36.968 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 12 ms
+mall 2019-05-09 23:59:37.624 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today01.png
+mall 2019-05-09 23:59:37.636 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today03.png
+mall 2019-05-09 23:59:37.639 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today02.png
+mall 2019-05-09 23:59:37.655 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_02.png
+mall 2019-05-09 23:59:37.656 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/today04.png
+mall 2019-05-09 23:59:37.663 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/like_01.png
+mall 2019-05-09 23:59:37.787 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg

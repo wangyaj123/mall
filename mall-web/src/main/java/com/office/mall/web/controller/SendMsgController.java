@@ -36,14 +36,14 @@ public class SendMsgController {
             message = "该手机号已被注册";
             return commonResult.validateFailed(message);
         } else {
-            //HashMap<String, String> m = SendMsg_webchineseController.getMessageStatus(phone);  //应用发送短信接口
-            HashMap<String, String> m = new HashMap<String, String>();
+            HashMap<String, String> m = SendMsg_webchineseController.getMessageStatus(phone);  //应用发送短信接口
+//            HashMap<String, String> m = new HashMap<String, String>();
             m.put("result","1");
             String result = m.get("result");              //获取到result值
             if (result.trim().equals("1")) {             //如果为1，表示成功发送
-              //  String code = m.get("code");           //获取发送的验证码内容
-                String code = "8888";
-                //logger.info("发送的验证码:"+code);     //打印日志
+                String code = m.get("code");           //获取发送的验证码内容
+//                String code = "8888";
+//                logger.info("发送的验证码:"+code);     //打印日志
                 System.out.println(code);
                 HttpSession session = request.getSession(); //设置session
                 session.setAttribute("code", code);             //将短信验证码放到session中保存

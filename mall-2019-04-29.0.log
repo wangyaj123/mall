@@ -1,0 +1,374 @@
+mall 2019-04-29 09:35:21.150 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 7056 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 09:35:21.196 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 09:35:21.196 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 09:35:37.464 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 09:35:37.574 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 09:35:37.620 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 09:35:37.620 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 09:35:37.652 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 09:35:37.652 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 09:35:37.652 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 09:35:37.652 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 09:35:39.260 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 09:35:45.895 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 09:35:45.895 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 23709 ms
+mall 2019-04-29 09:35:51.054 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 09:35:51.415 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 09:35:51.462 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 09:35:51.462 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 35.677 seconds (JVM running for 48.621)
+mall 2019-04-29 09:36:07.685 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 09:36:07.685 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 09:36:07.685 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 0 ms
+mall 2019-04-29 09:36:10.959 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-29 09:36:11.381 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-29 09:36:34.243 INFO      [http-nio-8081-exec-8]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 09:36:34.873 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-29 09:36:34.898 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: admin(String), 123456(String)
+mall 2019-04-29 09:36:34.927 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 1
+mall 2019-04-29 09:36:44.211 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 09:36:44.212 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 09:36:44.216 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 09:36:46.763 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 09:36:46.764 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 09:36:46.766 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 09:52:36.929 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5164 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 09:52:36.987 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 09:52:36.987 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 09:52:50.577 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 09:52:50.617 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 09:52:50.637 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 09:52:50.638 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 09:52:50.654 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 09:52:50.654 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 09:52:50.655 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 09:52:50.655 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 09:52:51.770 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 09:52:52.100 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 09:52:52.101 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 14671 ms
+mall 2019-04-29 09:52:55.539 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 09:52:55.724 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 09:52:57.445 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 09:52:57.474 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 23.052 seconds (JVM running for 36.498)
+mall 2019-04-29 09:58:08.292 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 09:58:08.292 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 09:58:08.301 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 8 ms
+mall 2019-04-29 09:58:15.993 INFO      [http-nio-8081-exec-5]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 09:58:20.008 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 09:58:20.008 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 09:58:20.218 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 09:58:20.218 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 09:58:20.285 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 09:58:20.285 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:12:40.359 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4968 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:12:40.385 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:12:40.387 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:12:47.619 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:12:47.656 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:12:47.700 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:12:47.700 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:12:47.716 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:12:47.716 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:12:47.717 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:12:47.717 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:12:48.999 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:12:49.549 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:12:49.550 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 8946 ms
+mall 2019-04-29 10:12:55.232 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:12:55.379 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:12:55.423 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:12:55.427 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 16.809 seconds (JVM running for 18.064)
+mall 2019-04-29 10:13:35.767 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:13:35.767 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:13:35.777 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 9 ms
+mall 2019-04-29 10:13:47.844 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /admin/all-order-manage-list.html
+mall 2019-04-29 10:13:55.166 INFO      [http-nio-8081-exec-8]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:13:55.748 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:13:55.779 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:13:55.793 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:13:59.978 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:13:59.979 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:13:59.984 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:19:51.262 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5924 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:19:51.284 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:19:51.286 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:19:55.352 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:19:55.426 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:19:55.466 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:19:55.466 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:19:55.473 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:19:55.474 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:19:55.474 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:19:55.474 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:19:56.606 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:19:57.212 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:19:57.212 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 5575 ms
+mall 2019-04-29 10:20:01.980 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:20:02.779 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:20:03.555 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:20:03.558 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 15.299 seconds (JVM running for 21.774)
+mall 2019-04-29 10:20:24.937 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:20:24.938 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:20:24.948 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-04-29 10:20:33.026 INFO      [http-nio-8081-exec-6]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:20:33.388 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:20:33.408 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:20:33.443 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:20:36.071 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:20:36.072 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:20:36.079 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:22:04.863 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-29 10:22:06.308 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-29 10:22:18.950 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-29 10:22:18.951 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: admin(String), 123456(String)
+mall 2019-04-29 10:22:18.953 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 1
+mall 2019-04-29 10:22:23.454 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:22:23.456 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:22:23.459 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:22:25.658 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:22:25.659 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:22:25.662 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:25:25.975 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /favicon.ico
+mall 2019-04-29 10:25:27.151 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-29 10:25:29.523 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-29 10:25:34.329 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-29 10:25:34.962 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: admin(String), 123456(String)
+mall 2019-04-29 10:25:35.094 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 1
+mall 2019-04-29 10:25:39.227 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /favicon.ico
+mall 2019-04-29 10:25:45.495 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:25:45.568 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:25:45.570 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:25:48.281 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:25:48.422 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:25:48.425 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:27:29.763 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:27:29.764 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:27:29.766 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:28:03.263 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:28:03.298 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:28:03.299 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:28:10.780 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:28:10.794 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:28:10.799 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:28:39.980 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:28:39.981 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:28:39.984 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:28:51.584 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:28:51.586 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:28:51.588 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:31:42.506 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5632 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:31:42.525 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:31:42.526 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:31:49.823 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:31:49.923 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:31:49.988 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:31:49.988 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:31:49.995 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:31:49.996 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:31:49.996 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:31:49.997 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:31:51.201 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:31:53.190 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:31:53.191 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 10237 ms
+mall 2019-04-29 10:32:01.224 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:32:01.995 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:32:02.140 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:32:02.145 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 24.167 seconds (JVM running for 42.691)
+mall 2019-04-29 10:32:17.027 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:32:17.029 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:32:17.390 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 361 ms
+mall 2019-04-29 10:32:28.088 INFO      [http-nio-8081-exec-8]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:32:28.440 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:32:28.458 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:32:28.474 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:32:31.446 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:32:31.447 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:32:31.451 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:32:35.719 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver logException- Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+mall 2019-04-29 10:33:51.901 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4436 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:33:51.988 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:33:51.990 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:33:56.158 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:33:56.176 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:33:56.198 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:33:56.198 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:33:56.214 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:33:56.214 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:33:56.214 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:33:56.215 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:33:57.292 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:33:58.091 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:33:58.091 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 5624 ms
+mall 2019-04-29 10:33:59.190 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:33:59.272 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:33:59.328 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:33:59.332 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 13.02 seconds (JVM running for 19.416)
+mall 2019-04-29 10:34:03.629 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:34:03.631 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:34:04.181 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 550 ms
+mall 2019-04-29 10:34:09.920 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver logException- Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+mall 2019-04-29 10:34:12.202 INFO      [http-nio-8081-exec-1]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:34:15.306 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:34:15.859 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:34:15.954 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:34:26.259 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:34:26.260 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:34:26.262 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:34:29.649 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:34:29.651 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:34:29.655 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:34:33.176 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- ==>  Preparing: update ums_shop set status = ? where id = ? 
+mall 2019-04-29 10:34:33.177 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- ==> Parameters: 0(Integer), 1(Integer)
+mall 2019-04-29 10:34:33.850 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- <==    Updates: 1
+mall 2019-04-29 10:34:40.299 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:34:40.300 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:34:40.304 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:35:41.276 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:35:41.278 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:35:41.282 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:36:53.813 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4960 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:36:54.404 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:36:54.405 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:37:00.475 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:37:00.501 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:37:00.513 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:37:00.513 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:37:00.520 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:37:00.520 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:37:00.520 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:37:00.521 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:37:01.588 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:37:02.816 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:37:02.816 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 7768 ms
+mall 2019-04-29 10:37:04.091 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:37:04.180 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:37:04.228 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:37:04.232 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 12.446 seconds (JVM running for 21.648)
+mall 2019-04-29 10:37:05.850 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:37:05.850 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:37:05.861 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 11 ms
+mall 2019-04-29 10:37:51.313 INFO      [http-nio-8081-exec-9]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:37:51.509 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:37:51.530 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:37:51.545 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:37:53.174 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:37:53.176 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:37:53.180 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:37:58.458 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.updateById debug- ==>  Preparing: update ums_shop set status = ? where id = ? 
+mall 2019-04-29 10:37:58.460 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.updateById debug- ==> Parameters: 0(Integer), 1(Integer)
+mall 2019-04-29 10:37:58.520 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.ShopMapper.updateById debug- <==    Updates: 1
+mall 2019-04-29 10:38:01.517 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:38:01.519 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:38:01.521 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:38:12.868 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:38:12.868 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:38:12.870 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:38:16.174 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:38:16.176 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:38:16.178 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:38:23.572 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:38:23.574 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:38:23.577 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2
+mall 2019-04-29 10:38:28.365 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:38:28.366 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:38:28.369 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:39:32.156 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 6408 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:39:32.161 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:39:32.162 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:39:34.941 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:39:34.973 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:39:34.994 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:39:34.995 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:39:35.006 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:39:35.007 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:39:35.008 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:39:35.009 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:39:36.046 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:39:36.206 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:39:36.207 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3940 ms
+mall 2019-04-29 10:39:37.142 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:39:37.219 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:39:37.246 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:39:37.250 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.897 seconds (JVM running for 6.631)
+mall 2019-04-29 10:41:30.340 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:41:30.341 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:41:30.669 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 328 ms
+mall 2019-04-29 10:41:37.098 INFO      [http-nio-8081-exec-4]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:41:37.781 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:41:37.859 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:41:37.887 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 1
+mall 2019-04-29 10:41:42.506 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:41:42.507 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:41:42.510 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:41:45.853 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- ==>  Preparing: update ums_shop set status = ? where id = ? 
+mall 2019-04-29 10:41:45.854 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- ==> Parameters: 1(Integer), 1(Integer)
+mall 2019-04-29 10:41:45.912 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.updateById debug- <==    Updates: 1
+mall 2019-04-29 10:41:49.207 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:41:49.208 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:41:49.210 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 0
+mall 2019-04-29 10:41:57.003 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:41:57.003 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:41:57.005 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2
+mall 2019-04-29 10:42:01.952 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:42:01.953 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:42:01.956 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2
+mall 2019-04-29 10:42:04.877 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:42:04.878 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:42:04.881 DEBUG     [http-nio-8081-exec-8]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:42:08.950 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.updateById debug- ==>  Preparing: update ums_shop set status = ? where id = ? 
+mall 2019-04-29 10:42:08.951 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.updateById debug- ==> Parameters: 2(Integer), 1(Integer)
+mall 2019-04-29 10:42:09.229 DEBUG     [http-nio-8081-exec-2]  com.office.mall.dao.ShopMapper.updateById debug- <==    Updates: 1
+mall 2019-04-29 10:42:13.716 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:42:13.719 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:42:13.723 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2
+mall 2019-04-29 10:42:16.210 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:42:16.211 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:42:16.213 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 0
+mall 2019-04-29 10:42:17.352 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:42:17.354 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:42:17.355 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 0
+mall 2019-04-29 10:55:41.659 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4704 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-29 10:55:41.693 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-29 10:55:41.694 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-29 10:55:45.177 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-29 10:55:45.206 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:55:45.238 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-29 10:55:45.239 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-29 10:55:45.246 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-29 10:55:45.246 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-29 10:55:45.247 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-29 10:55:45.247 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-29 10:55:46.377 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-29 10:55:46.884 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-29 10:55:46.885 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 4824 ms
+mall 2019-04-29 10:55:48.180 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-29 10:55:48.283 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-29 10:55:48.360 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-29 10:55:48.363 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 10.474 seconds (JVM running for 18.127)
+mall 2019-04-29 10:55:55.097 INFO      [http-nio-8081-exec-2]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-29 10:55:55.098 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-29 10:55:55.106 INFO      [http-nio-8081-exec-2]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 8 ms
+mall 2019-04-29 10:56:03.830 INFO      [http-nio-8081-exec-6]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-29 10:56:04.025 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop WHERE shop_name like CONCAT('%',replace(replace(?,'%','\%'),'_','\_'),'%') and status = ? 
+mall 2019-04-29 10:56:04.046 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: (String), 0(Integer)
+mall 2019-04-29 10:56:04.063 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 0
+mall 2019-04-29 10:56:07.755 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:56:07.757 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:56:07.764 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2
+mall 2019-04-29 10:56:13.194 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:56:13.195 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:56:13.199 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:56:22.309 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:56:22.311 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 2(Integer)
+mall 2019-04-29 10:56:22.313 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:56:26.375 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:56:26.376 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 2(Integer)
+mall 2019-04-29 10:56:26.378 DEBUG     [http-nio-8081-exec-4]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:56:28.841 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop where id = ? 
+mall 2019-04-29 10:56:28.842 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- ==> Parameters: 1(Integer)
+mall 2019-04-29 10:56:28.844 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.ShopMapper.selectByPrimaryKey debug- <==      Total: 1
+mall 2019-04-29 10:56:29.887 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.updateById debug- ==>  Preparing: update ums_shop set status = ? where id = ? 
+mall 2019-04-29 10:56:29.888 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.updateById debug- ==> Parameters: 3(Integer), 1(Integer)
+mall 2019-04-29 10:56:30.117 DEBUG     [http-nio-8081-exec-6]  com.office.mall.dao.ShopMapper.updateById debug- <==    Updates: 1
+mall 2019-04-29 10:56:31.587 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==>  Preparing: select id, account, password, shop_name, company_name, company_address, linkman_name, linkman_phone, license_number, legalman, legalman_id, bank_name, bank_count, description,register_time,status from ums_shop 
+mall 2019-04-29 10:56:31.588 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- ==> Parameters: 
+mall 2019-04-29 10:56:31.590 DEBUG     [http-nio-8081-exec-7]  com.office.mall.dao.ShopMapper.queryList debug- <==      Total: 2

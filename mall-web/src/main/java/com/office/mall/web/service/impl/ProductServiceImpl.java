@@ -44,8 +44,8 @@ public class ProductServiceImpl implements ProductService {
         Brand brand = brandMapper.selectByPrimaryKey(request.getBrandId());
         ProductWithBLOBs product = productMapper.selectByPrimaryKey(request);
         ProductResponse productResponse = productConverter.convert(product, ProductResponse.class);
-        productResponse.setShopName(shop.getShopName());
-        productResponse.setBrandName(brand.getName());
+        //productResponse.setShopName(shop.getShopName());
+//        productResponse.setBrandName(brand.getName());
         return commonResult.success(productResponse);
     }
 

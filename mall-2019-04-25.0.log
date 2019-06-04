@@ -1,0 +1,869 @@
+mall 2019-04-25 22:01:34.292 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5360 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:01:34.323 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:01:34.323 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:01:39.373 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.*.*mapper]' package. Please check your configuration.
+mall 2019-04-25 22:01:39.998 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.web]' package. Please check your configuration.
+mall 2019-04-25 22:01:43.376 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:01:43.469 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:01:43.516 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:01:43.516 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:01:43.532 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:01:43.532 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:01:43.532 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:01:43.532 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:01:44.776 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:01:45.059 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:01:45.059 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 9970 ms
+mall 2019-04-25 22:01:45.955 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:01:46.080 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:01:46.112 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:01:46.127 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 23.58 seconds (JVM running for 38.303)
+mall 2019-04-25 22:15:19.260 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 1760 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:15:19.291 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:15:19.291 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:15:21.943 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.*.*mapper]' package. Please check your configuration.
+mall 2019-04-25 22:15:23.757 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.web]' package. Please check your configuration.
+mall 2019-04-25 22:15:29.161 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:15:29.223 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:15:29.239 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:15:29.239 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:15:29.254 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:15:29.254 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:15:29.254 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:15:29.254 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:15:30.405 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:15:31.220 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:15:31.220 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 11742 ms
+mall 2019-04-25 22:15:31.314 WARN      [main]  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext refresh- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.office.mall.dao.AdminMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+mall 2019-04-25 22:15:31.314 INFO      [main]  org.apache.catalina.core.StandardService log- Stopping service [Tomcat]
+mall 2019-04-25 22:15:31.470 WARN      [main]  org.apache.catalina.loader.WebappClassLoaderBase log- The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+mall 2019-04-25 22:15:31.502 INFO      [main]  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener logMessage- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+mall 2019-04-25 22:15:31.706 ERROR     [main]  org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter report- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.office.mall.dao.AdminMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.office.mall.dao.AdminMapper' in your configuration.
+
+mall 2019-04-25 22:16:32.174 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 2352 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:16:32.174 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:16:32.174 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:16:33.015 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.*.*mapper]' package. Please check your configuration.
+mall 2019-04-25 22:16:33.125 WARN      [main]  org.mybatis.spring.mapper.ClassPathMapperScanner doScan- No MyBatis mapper was found in '[com.office.mall.web]' package. Please check your configuration.
+mall 2019-04-25 22:16:33.697 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:16:33.713 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:16:33.728 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:16:34.761 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:16:34.905 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:16:34.905 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2606 ms
+mall 2019-04-25 22:16:34.967 WARN      [main]  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext refresh- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.office.mall.dao.AdminMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+mall 2019-04-25 22:16:34.967 INFO      [main]  org.apache.catalina.core.StandardService log- Stopping service [Tomcat]
+mall 2019-04-25 22:16:34.983 WARN      [main]  org.apache.catalina.loader.WebappClassLoaderBase log- The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+mall 2019-04-25 22:16:34.983 INFO      [main]  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener logMessage- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+mall 2019-04-25 22:16:35.123 ERROR     [main]  org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter report- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.office.mall.dao.AdminMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.office.mall.dao.AdminMapper' in your configuration.
+
+mall 2019-04-25 22:16:48.348 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 3248 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:16:48.363 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:16:48.363 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:16:50.160 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:16:50.176 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:16:50.191 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:16:51.223 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:16:51.348 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:16:51.348 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2875 ms
+mall 2019-04-25 22:16:53.215 WARN      [main]  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext refresh- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.office.mall.web.commons.CommonResult' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+mall 2019-04-25 22:16:53.231 INFO      [main]  org.apache.catalina.core.StandardService log- Stopping service [Tomcat]
+mall 2019-04-25 22:16:53.231 WARN      [main]  org.apache.catalina.loader.WebappClassLoaderBase log- The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+mall 2019-04-25 22:16:53.247 INFO      [main]  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener logMessage- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+mall 2019-04-25 22:16:53.372 ERROR     [main]  org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter report- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.office.mall.web.commons.CommonResult' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.office.mall.web.commons.CommonResult' in your configuration.
+
+mall 2019-04-25 22:17:41.630 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4460 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:17:41.630 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:17:41.630 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:17:43.495 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:17:43.510 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:17:43.510 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:17:43.510 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:17:43.526 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:17:43.526 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:17:43.526 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:17:43.526 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:17:44.542 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:17:44.698 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:17:44.698 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2896 ms
+mall 2019-04-25 22:17:46.111 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:17:46.221 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:17:46.299 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:17:46.299 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.607 seconds (JVM running for 6.638)
+mall 2019-04-25 22:18:12.772 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:18:12.772 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:18:12.932 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 160 ms
+mall 2019-04-25 22:18:13.879 INFO      [http-nio-8081-exec-1]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-25 22:18:14.450 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where limit 1 
+mall 2019-04-25 22:18:14.537 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: 
+mall 2019-04-25 22:18:15.011 INFO      [http-nio-8081-exec-1]  org.springframework.jdbc.support.SQLErrorCodesFactory <init>- SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+mall 2019-04-25 22:18:15.161 ERROR     [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] log- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 10
+### The error may exist in file [D:\J\GraduationProject\mall2\mall-web\target\classes\mapper\AdminMapper.xml]
+### The error may involve com.office.mall.dao.AdminMapper.select-Inline
+### The error occurred while setting parameters
+### SQL: select                id, username, password, icon, email, note, create_time, login_time, status         from ums_admin     where                 limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 10
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 10] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 10
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy69.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy61.select(Unknown Source)
+	at com.office.mall.web.service.impl.AdminServiceImpl.select(AdminServiceImpl.java:19)
+	at com.office.mall.web.controller.AdminController.login(AdminController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+mall 2019-04-25 22:18:53.926 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5248 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:18:53.926 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:18:53.941 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:18:55.967 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:18:55.982 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:18:55.982 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:18:55.998 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:18:55.998 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:18:55.998 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:18:55.998 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:18:55.998 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:19:28.419 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 1620 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:19:28.424 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:19:28.425 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:19:30.402 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:19:30.433 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:19:30.433 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:19:30.433 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:19:30.449 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:19:30.449 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:19:30.449 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:19:30.449 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:19:31.480 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:19:31.730 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:19:31.730 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3088 ms
+mall 2019-04-25 22:19:32.411 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:19:32.481 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:19:32.513 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:19:32.513 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.137 seconds (JVM running for 6.144)
+mall 2019-04-25 22:20:01.987 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:20:01.987 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:20:01.987 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 0 ms
+mall 2019-04-25 22:20:02.097 INFO      [http-nio-8081-exec-1]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-25 22:20:02.253 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where and username = ? and password=? 
+mall 2019-04-25 22:20:02.284 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: 'aa'(String), '123456'(String)
+mall 2019-04-25 22:20:02.315 INFO      [http-nio-8081-exec-1]  org.springframework.jdbc.support.SQLErrorCodesFactory <init>- SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+mall 2019-04-25 22:20:02.331 ERROR     [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] log- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username = '\'aa\''
+     
+     
+      and password='\'123456\''' at line 9
+### The error may exist in file [D:\J\GraduationProject\mall2\mall-web\target\classes\mapper\AdminMapper.xml]
+### The error may involve com.office.mall.dao.AdminMapper.select-Inline
+### The error occurred while setting parameters
+### SQL: select                id, username, password, icon, email, note, create_time, login_time, status         from ums_admin     where             and username = ?                   and password=?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username = '\'aa\''
+     
+     
+      and password='\'123456\''' at line 9
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username = '\'aa\''
+     
+     
+      and password='\'123456\''' at line 9] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and username = '\'aa\''
+     
+     
+      and password='\'123456\''' at line 9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy69.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy61.select(Unknown Source)
+	at com.office.mall.web.service.impl.AdminServiceImpl.select(AdminServiceImpl.java:19)
+	at com.office.mall.web.controller.AdminController.login(AdminController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+mall 2019-04-25 22:20:09.662 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where 
+mall 2019-04-25 22:20:09.662 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: 
+mall 2019-04-25 22:20:09.662 ERROR     [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] log- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+### The error may exist in file [D:\J\GraduationProject\mall2\mall-web\target\classes\mapper\AdminMapper.xml]
+### The error may involve com.office.mall.dao.AdminMapper.select-Inline
+### The error occurred while setting parameters
+### SQL: select                id, username, password, icon, email, note, create_time, login_time, status         from ums_admin     where
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy69.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy61.select(Unknown Source)
+	at com.office.mall.web.service.impl.AdminServiceImpl.select(AdminServiceImpl.java:19)
+	at com.office.mall.web.controller.AdminController.login(AdminController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+mall 2019-04-25 22:31:45.348 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 1724 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:31:45.395 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:31:45.395 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:31:52.214 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:31:52.261 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:31:52.276 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:31:52.276 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:31:52.292 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:31:52.292 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:31:52.292 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:31:52.292 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:31:53.525 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:31:53.712 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:31:53.712 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 8176 ms
+mall 2019-04-25 22:31:57.201 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:31:57.341 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:31:57.466 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:31:57.466 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 13.822 seconds (JVM running for 28.93)
+mall 2019-04-25 22:32:07.520 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:32:07.520 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:32:07.520 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 0 ms
+mall 2019-04-25 22:32:07.723 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /admin/login
+mall 2019-04-25 22:33:20.041 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:33:23.427 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:34:44.178 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:34:44.190 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:36:39.563 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 5808 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:36:39.579 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:36:39.579 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:36:41.540 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:36:41.556 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:36:41.571 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:36:41.571 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:36:41.587 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:36:41.587 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:36:41.587 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:36:41.587 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:36:42.628 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:36:42.847 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:36:42.847 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3221 ms
+mall 2019-04-25 22:36:43.954 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:36:44.032 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:36:44.063 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:36:44.063 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.609 seconds (JVM running for 9.423)
+mall 2019-04-25 22:37:20.518 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:37:20.518 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:37:20.518 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 0 ms
+mall 2019-04-25 22:37:20.959 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:37:23.302 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:38:41.114 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4892 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:38:41.130 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:38:41.130 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:38:43.764 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:38:43.793 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:38:43.824 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:38:43.825 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:38:43.838 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:38:43.838 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:38:43.839 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:38:43.839 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:38:44.868 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:38:45.087 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:38:45.087 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3817 ms
+mall 2019-04-25 22:38:46.094 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:38:46.282 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:38:46.328 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:38:46.344 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.904 seconds (JVM running for 6.554)
+mall 2019-04-25 22:39:39.614 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 3056 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:39:39.614 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:39:39.614 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:39:41.461 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:39:41.493 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:39:41.493 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:39:41.493 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:39:41.508 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:39:41.508 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:39:41.508 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:39:41.508 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:39:42.525 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:39:42.650 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:39:42.650 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2864 ms
+mall 2019-04-25 22:39:43.385 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:39:43.448 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:39:43.479 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:39:43.479 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.68 seconds (JVM running for 5.958)
+mall 2019-04-25 22:39:51.729 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:39:51.729 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:39:51.739 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-04-25 22:39:52.142 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:39:52.168 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:41:47.516 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 680 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:41:47.531 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:41:47.531 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:41:50.004 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:41:50.020 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:41:50.036 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:41:51.061 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:41:51.249 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:41:51.249 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3608 ms
+mall 2019-04-25 22:41:52.093 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:41:52.186 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:41:52.218 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:41:52.218 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.327 seconds (JVM running for 6.017)
+mall 2019-04-25 22:41:58.270 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:41:58.270 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:41:58.280 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-04-25 22:41:58.696 WARN      [http-nio-8081-exec-3]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:42:00.556 WARN      [http-nio-8081-exec-10]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:44:05.082 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:44:05.865 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 22:44:30.175 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:44:34.099 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /favicon.ico
+mall 2019-04-25 22:48:56.972 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:52:06.745 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 6120 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 22:52:06.754 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 22:52:06.755 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 22:52:09.104 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 22:52:09.117 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:52:09.145 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 22:52:09.146 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 22:52:09.152 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 22:52:09.152 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 22:52:09.152 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 22:52:09.153 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 22:52:10.179 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 22:52:10.316 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 22:52:10.316 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3459 ms
+mall 2019-04-25 22:52:11.038 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 22:52:11.111 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 22:52:11.134 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 22:52:11.137 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.121 seconds (JVM running for 5.973)
+mall 2019-04-25 22:52:15.875 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 22:52:15.876 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 22:52:15.887 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 11 ms
+mall 2019-04-25 22:52:16.463 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:52:18.760 WARN      [http-nio-8081-exec-1]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:52:20.201 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:53:01.958 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:57:17.020 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 22:57:27.503 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 23:00:52.154 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 4328 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 23:00:52.183 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 23:00:52.184 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 23:00:55.012 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 23:00:55.045 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:00:55.071 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 23:00:55.072 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 23:00:55.085 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 23:00:55.089 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 23:00:55.090 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 23:00:55.091 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 23:00:56.171 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 23:00:56.737 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 23:00:56.738 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 4404 ms
+mall 2019-04-25 23:00:57.653 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 23:00:57.724 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:00:57.773 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 23:00:57.776 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 8.738 seconds (JVM running for 13.107)
+mall 2019-04-25 23:01:25.320 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 23:01:25.320 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 23:01:25.330 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-04-25 23:01:25.833 WARN      [http-nio-8081-exec-2]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:02:47.646 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:03:50.172 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 1956 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 23:03:50.180 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 23:03:50.181 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 23:03:51.566 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 23:03:51.580 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:03:51.593 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 23:03:51.593 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 23:03:51.600 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 23:03:51.600 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 23:03:51.601 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 23:03:51.601 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 23:03:52.630 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 23:03:52.754 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 23:03:52.754 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2503 ms
+mall 2019-04-25 23:03:53.471 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 23:03:53.556 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:03:53.580 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 23:03:53.583 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.688 seconds (JVM running for 6.565)
+mall 2019-04-25 23:04:08.834 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 23:04:08.835 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 23:04:08.845 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 10 ms
+mall 2019-04-25 23:04:09.205 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:04:49.995 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 3212 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 23:04:50.013 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 23:04:50.037 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 23:04:52.276 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 23:04:52.295 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:04:52.309 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 23:04:52.310 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 23:04:52.318 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 23:04:52.319 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 23:04:52.319 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 23:04:52.319 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 23:04:53.350 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 23:04:53.468 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 23:04:53.469 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 3331 ms
+mall 2019-04-25 23:04:54.265 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 23:04:54.353 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:04:54.383 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 23:04:54.386 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 5.431 seconds (JVM running for 6.726)
+mall 2019-04-25 23:04:54.909 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 23:04:54.910 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 23:04:54.919 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 9 ms
+mall 2019-04-25 23:04:59.217 WARN      [http-nio-8081-exec-8]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:05:18.553 INFO      [http-nio-8081-exec-5]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-25 23:05:18.839 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where 
+mall 2019-04-25 23:05:18.864 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: 
+mall 2019-04-25 23:05:18.954 INFO      [http-nio-8081-exec-5]  org.springframework.jdbc.support.SQLErrorCodesFactory <init>- SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+mall 2019-04-25 23:05:18.994 ERROR     [http-nio-8081-exec-5]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] log- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+### The error may exist in file [D:\J\GraduationProject\mall2\mall-web\target\classes\mapper\AdminMapper.xml]
+### The error may involve com.office.mall.dao.AdminMapper.select-Inline
+### The error occurred while setting parameters
+### SQL: select                id, username, password, icon, email, note, create_time, login_time, status         from ums_admin     where
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1192)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy69.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:82)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy61.select(Unknown Source)
+	at com.office.mall.web.service.impl.AdminServiceImpl.select(AdminServiceImpl.java:19)
+	at com.office.mall.web.controller.AdminController.login(AdminController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+mall 2019-04-25 23:07:58.851 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 2208 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 23:07:58.856 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 23:07:58.858 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 23:08:00.640 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 23:08:00.653 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:08:00.671 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 23:08:00.671 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 23:08:00.677 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 23:08:00.678 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 23:08:00.678 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 23:08:00.678 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 23:08:01.692 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 23:08:01.813 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 23:08:01.813 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2820 ms
+mall 2019-04-25 23:08:02.497 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 23:08:02.570 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:08:02.594 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 23:08:02.597 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.541 seconds (JVM running for 5.806)
+mall 2019-04-25 23:08:23.606 INFO      [http-nio-8081-exec-3]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 23:08:23.606 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 23:08:23.618 INFO      [http-nio-8081-exec-3]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 12 ms
+mall 2019-04-25 23:08:23.979 WARN      [http-nio-8081-exec-5]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:08:36.010 INFO      [http-nio-8081-exec-1]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-25 23:08:36.314 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-25 23:08:36.330 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: null, null
+mall 2019-04-25 23:08:36.473 DEBUG     [http-nio-8081-exec-1]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 0
+mall 2019-04-25 23:09:51.622 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-25 23:09:51.623 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: null, null
+mall 2019-04-25 23:09:51.624 DEBUG     [http-nio-8081-exec-9]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 0
+mall 2019-04-25 23:10:27.688 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-25 23:10:27.690 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: null, null
+mall 2019-04-25 23:10:27.713 DEBUG     [http-nio-8081-exec-5]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 0
+mall 2019-04-25 23:10:47.799 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-25 23:10:47.802 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: null, null
+mall 2019-04-25 23:10:47.804 DEBUG     [http-nio-8081-exec-3]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 0
+mall 2019-04-25 23:11:49.521 INFO      [main]  com.office.mall.web.MallWebApplication logStarting- Starting MallWebApplication on 遇见 with PID 6636 (D:\J\GraduationProject\mall2\mall-web\target\classes started by 王 in D:\J\GraduationProject\mall2)
+mall 2019-04-25 23:11:49.536 DEBUG     [main]  com.office.mall.web.MallWebApplication logStarting- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+mall 2019-04-25 23:11:49.536 INFO      [main]  com.office.mall.web.MallWebApplication logStartupProfileInfo- No active profile set, falling back to default profiles: default
+mall 2019-04-25 23:11:51.177 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer initialize- Tomcat initialized with port(s): 8081 (http)
+mall 2019-04-25 23:11:51.192 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Initializing ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:11:51.192 INFO      [main]  org.apache.catalina.core.StandardService log- Starting service [Tomcat]
+mall 2019-04-25 23:11:51.192 INFO      [main]  org.apache.catalina.core.StandardEngine log- Starting Servlet engine: [Apache Tomcat/9.0.17]
+mall 2019-04-25 23:11:51.208 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+mall 2019-04-25 23:11:51.208 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+mall 2019-04-25 23:11:51.208 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+mall 2019-04-25 23:11:51.208 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+mall 2019-04-25 23:11:52.224 INFO      [main]  org.apache.catalina.core.AprLifecycleListener log- OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+mall 2019-04-25 23:11:52.317 INFO      [main]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring embedded WebApplicationContext
+mall 2019-04-25 23:11:52.317 INFO      [main]  org.springframework.web.context.ContextLoader prepareWebApplicationContext- Root WebApplicationContext: initialization completed in 2671 ms
+mall 2019-04-25 23:11:52.974 WARN      [main]  org.thymeleaf.templatemode.TemplateMode parse- [THYMELEAF][main] Unknown Template Mode 'HTML5 '. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+mall 2019-04-25 23:11:53.036 INFO      [main]  org.apache.coyote.http11.Http11NioProtocol log- Starting ProtocolHandler ["http-nio-8081"]
+mall 2019-04-25 23:11:53.067 INFO      [main]  org.springframework.boot.web.embedded.tomcat.TomcatWebServer start- Tomcat started on port(s): 8081 (http) with context path ''
+mall 2019-04-25 23:11:53.067 INFO      [main]  com.office.mall.web.MallWebApplication logStarted- Started MallWebApplication in 4.343 seconds (JVM running for 5.359)
+mall 2019-04-25 23:12:14.765 INFO      [http-nio-8081-exec-1]  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] log- Initializing Spring DispatcherServlet 'dispatcherServlet'
+mall 2019-04-25 23:12:14.765 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Initializing Servlet 'dispatcherServlet'
+mall 2019-04-25 23:12:14.781 INFO      [http-nio-8081-exec-1]  org.springframework.web.servlet.DispatcherServlet initServletBean- Completed initialization in 16 ms
+mall 2019-04-25 23:12:16.182 WARN      [http-nio-8081-exec-6]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:12:19.402 WARN      [http-nio-8081-exec-4]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /img/wx_cz.jpg
+mall 2019-04-25 23:12:21.436 WARN      [http-nio-8081-exec-9]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 23:12:21.530 WARN      [http-nio-8081-exec-7]  org.springframework.web.servlet.PageNotFound noHandlerFound- No mapping for GET /assets/img/favicon.ico
+mall 2019-04-25 23:12:38.595 INFO      [http-nio-8081-exec-10]  com.alibaba.druid.pool.DruidDataSource init- {dataSource-1} inited
+mall 2019-04-25 23:12:38.744 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.AdminMapper.select debug- ==>  Preparing: select id, username, password, icon, email, note, create_time, login_time, status from ums_admin where username = ? and password = ? 
+mall 2019-04-25 23:12:38.775 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.AdminMapper.select debug- ==> Parameters: null, null
+mall 2019-04-25 23:12:38.775 DEBUG     [http-nio-8081-exec-10]  com.office.mall.dao.AdminMapper.select debug- <==      Total: 0
